@@ -1,0 +1,48 @@
+/*
+Topic cards
+-----------------------------
+*/
+
+.ntg-group-topics {
+  h3 {
+    color: $ntg-arafura-blue;
+  }
+  div[class^="col"]:hover {
+    h3, i {
+      color: $ntg-ochre-mid;
+    }
+  }
+  hr {
+    margin: 0;
+  }
+
+  &__subtitle {
+    display: flex;
+    justify-content: space-between;
+
+    i {
+      color: $ntg-sky-blue;
+    }
+  }
+
+  &--homepage {
+    h3 {
+      font-size: pxToRem(22px);
+      border-bottom: 3px dotted #d7d2cb;
+    }
+    i {
+      margin-right: 0.5rem;
+    }
+    div[class^="col"] {
+      transition: background 0.3s ease;
+
+      &:hover {
+        background-color: #f4f2ef;
+        h3 {
+          color: $ntg-ochre-mid;
+          border-bottom: 3px dotted $ntg-ochre-mid;
+        }
+      }
+    }
+  }
+}

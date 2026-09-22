@@ -1,0 +1,78 @@
+/*
+-----------------------------
+Alerts
+-----------------------------
+*/
+
+.ntg-alert {
+  border: 0.07rem solid transparent;
+  border-left-width: 0.5rem !important;
+  border-radius: 0 !important;
+
+  /* Alert border and icons */
+  &__icon {
+    margin-top: -0.5rem;
+    &:before {
+      font-family: "Font Awesome 6 Pro";
+      margin-right: 1.25rem;
+      font-size: 2rem;
+      font-weight: 390;
+    }
+  }
+
+  &--info {
+    border-color: $ntg-alert-info !important;
+    .ntg-alert__icon:before {
+      content: "\f05a";
+      color: $ntg-alert-info;
+    }
+  }
+
+  &--success {
+    border-color: $ntg-alert-success !important;
+    .ntg-alert__icon:before {
+      content: "\f058";
+      color: $ntg-alert-success;
+    }
+  }
+
+  &--warning {
+    border-color: $ntg-alert-warning !important;
+    .ntg-alert__icon:before {
+      content: "\f071";
+      color: $ntg-alert-warning;
+    }
+  }
+
+  &--error {
+    border-color: $ntg-alert-error !important;
+    .ntg-alert__icon:before {
+      content: "\f2ee";
+      color: $ntg-alert-error;
+    }
+  }
+
+  &--other {
+    border-color: $ntg-alert-other !important;
+    .ntg-alert__icon:before {
+      content: "\f06a";
+      color: $ntg-alert-other;
+    }
+  }
+
+  /* Alert spacing */
+  &__text {
+    padding-right: 2rem !important;
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin-bottom: 1rem;
+      margin-top: 0;
+    }
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

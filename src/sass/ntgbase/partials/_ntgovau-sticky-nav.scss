@@ -1,0 +1,134 @@
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------
+// ntg Sticky Nav
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+div[data-component="ntg-sticky-nav"] {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.ntg-sticky-nav-wrapper {
+  //Compensate for .container-fluid's 12px x margin
+  //margin: auto -12px;
+  background: $ntg-color-white;
+  //backdrop-filter: saturate(180%) blur(20px);
+  //background-color: rgba(255,255,255,0.88);
+  border-bottom: 2px solid $light;
+  position: relative;
+
+  & div {
+    height: 72px;
+    overflow: hidden;
+  }
+
+  & .container {
+    padding-left: 0;
+  }
+
+  // Playground
+  transition: background 300ms ease-in-out;
+}
+
+.ntg-sticky-nav {
+  //UL
+  position: relative;
+  margin: 0;
+  padding: 0;
+
+  //LI
+  &__item {
+    list-style: none;
+    display: inline-block;
+    padding: pxToRem(0 40px 0 0);
+    margin-bottom: 0 !important;
+
+    &:before {
+      content: "" !important;
+    }
+
+    a {
+      text-decoration: none;
+      font-size: pxToRem(16px);
+      font-weight: 500;
+      padding: pxToRem(0 0 24px 0);
+      // border-bottom: 2px solid transparent;
+      display: block;
+      position: relative;
+      //   transition: border 300ms ease;
+      border-bottom: none;
+
+      &:hover {
+        height: 48px;
+      }
+
+      &:before {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 5px;
+        background: none;
+      }
+    }
+
+    &.active {
+      a:before {
+        background-color: $secondary;
+        // padding-bottom: calc(1.5rem - 4px);
+        transition: border 300ms ease;
+      }
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+
+  + .ntg-btn {
+    margin: pxToRem(12px 0);
+    white-space: nowrap;
+  }
+
+  &-active {
+    //Prevents a screen "jump up" when the sticky nav moves to a fixed position (ie it gets removed from the document flow and teh document jumps up the fill the missing 56px gap)
+    padding-top: 76px;
+
+    .ntg-sticky-nav-background {
+      height: 72px;
+      background-color: $primary;
+      position: fixed;
+      top: 0;
+      z-index: 98;
+      // Playground
+      transition: background 300ms ease-in-out;
+    }
+
+    .ntg-sticky-nav-wrapper {
+      position: fixed;
+      top: 0;
+      // left: 0;
+      // right: 0;
+      z-index: 99;
+      border-bottom: none;
+      background-color: $primary;
+    }
+
+    .ntg-sticky-nav__item a {
+      color: $ntg-color-white;
+    }
+
+    .ntg-sticky-nav + .ntg-btn {
+      background: none;
+      color: $ntg-color-white;
+      box-shadow: 0px 0px 0px 1.5px $ntg-color-white inset;
+      background: none;
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.2);
+      }
+    }
+  }
+}

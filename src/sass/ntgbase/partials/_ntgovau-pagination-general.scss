@@ -1,0 +1,36 @@
+
+/*
+-----------------------------
+  General pagination
+-----------------------------  
+*/
+nav .pagination li {
+  padding: 0;
+  margin: 0;
+}
+nav .pagination li a {
+  border: none;
+  border-top: 4px solid $ntg-footer-copyright;
+  padding: 25px;
+  color: black;
+}
+nav .pagination li a:first-child {
+  border-top-left-radius: 0;
+}
+nav .pagination li a:last-child {
+  border-top-right-radius: 0;
+}
+nav .pagination li a:hover {
+  background: none;
+  border-top: 4px solid $ntg-arafura-blue-variant;
+  color: $ntg-arafura-blue-variant;
+}
+nav .pagination li:before {
+  content: '';
+}
+
+nav .pagination li.page-item.active a.page-link {
+  border-color: $ntg-arafura-blue-variant;
+  background: $ntg-footer-copyright;
+  color: $ntg-arafura-blue-variant;
+}

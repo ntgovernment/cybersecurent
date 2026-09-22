@@ -1,0 +1,179 @@
+
+/*
+-----------------------------
+Example box
+-----------------------------
+*/    
+#guide-example, 
+.guide-example {
+    position: relative;
+    border: solid 2px #f0f3f5;
+    margin: 1.4em 0;
+    padding: 3.4rem 1.25rem 1.25rem 1.25rem;
+}
+#guide-example .guide-example-heading, 
+.guide-example .guide-example-heading {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: normal;
+    background-color: #f0f3f5;
+    font-size: 87.5%;
+    padding: 0.4em 0.8em;
+    margin:0 !important;
+} 
+#guide-example h2, #guide-example h3, #guide-example h4, #guide-example h5, #guide-example h6,
+.guide-example h2, .guide-example h3, .guide-example h4, .guide-example h5, .guide-example h6 {
+    margin-top: 0;
+    margin-bottom: 1rem !important;
+}
+#guide-example p:last-child, 
+.guide-example p:last-child {
+    margin-bottom:0;
+}
+
+/* inquests  */
+.container.inquest_finding {
+  width: 99%;
+}
+
+article.inquest table {
+  counter-reset: rowNumber;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+article.inquest tr td:first-child {
+  counter-increment: rowNumber;
+}
+
+article.inquest tr td:first-child::before {
+  content: counter(rowNumber);
+  min-width: 1em;
+  margin-right: 0.5em;
+}
+
+article.inquest tbody tr:hover {
+  background-color: whiteSmoke;
+  cursor: pointer;
+}
+
+/* inquest finding responsive tables */
+@media (max-width: 767px) {
+  .ac-label:hover {
+    background-color: whiteSmoke;
+  }
+
+  .ac-label:hover:after {
+    background-color: #e5e5e5;
+  }
+
+  .inquest_finding table th,
+  table td {
+    text-align: left;
+  }
+
+  .inquest_finding table.layout {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .inquest_finding table.display {
+    margin: 1em 0;
+    counter-reset: rowNumber;
+  }
+
+  .inquest_finding table.display tr td:first-child {
+    counter-increment: rowNumber;
+  }
+
+  .inquest_finding table.display tr td:first-child::before {
+    min-width: 1em;
+  }
+
+  .inquest_finding table.display th,
+  .inquest_finding table.display td {
+    padding: .5em 1em;
+  }
+
+  .inquest_finding table.display tr {
+    border-right: 1px solid #d8d8d8;
+    border-left: 1px solid #d8d8d8;
+  }
+
+  .inquest_finding table.resp-table tr {
+    margin-bottom: 1em;
+  }
+
+  .inquest_finding table.resp-table {
+    box-shadow: none;
+    width: 100%;
+  }
+
+  .inquest_finding table.resp-table thead {
+    display: none;
+  }
+
+  .inquest_finding table.display th,
+  .inquest_finding table.display td {
+    padding: .5em;
+    width: inherit;
+  }
+
+  .inquest_finding table.display tr td:first-child {
+    counter-increment: rowNumber;
+    padding: 0;
+    border: none;
+    border-bottom: none;
+  }
+
+  article.inquest table.resp-table td:nth-child(1):before {
+    content: "# " counter(rowNumber);
+    background: #595959;
+    color: $ntg-color-white;
+    padding: 1%;
+    margin-right: 0;
+    display: block;
+  }
+
+  .inquest_finding table.resp-table td:nth-child(2):before {
+    content: 'Inquest into the death of:';
+  }
+
+  .inquest_finding table.resp-table td:nth-child(3):before {
+    content: 'Date Inquest Commencing:';
+  }
+
+  .inquest_finding table.resp-table td:nth-child(4):before {
+    content: 'Date of Findings:';
+  }
+
+  .inquest_finding table.resp-table td:nth-child(5):before {
+    content: 'Location of Inquest:';
+  }
+
+  .inquest_finding table.resp-table td:nth-child(2):before,
+  .inquest_finding table.resp-table td:nth-child(3):before,
+  .inquest_finding table.resp-table td:nth-child(4):before,
+  .inquest_finding table.resp-table td:nth-child(5):before {
+    color: #000;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 1%;
+  }
+
+  .inquest_finding table.resp-table tr,
+  .inquest_finding table.resp-table td {
+    display: block;
+  }
+
+  .inquest_finding article.inquest tbody tr:nth-child(even) {
+    background-color: whiteSmoke;
+  }
+
+  article.inquest tbody tr:hover {
+    background-color: $ntg-color-white;
+  }
+}

@@ -1,0 +1,250 @@
+/*
+-----------------------------
+Map
+-----------------------------
+*/
+#crocodile_captures_map,
+#crocodile_captures {
+  width: 100%;
+  min-height: 500px;
+}
+
+/*Info window size (optional) */
+.gomapMarker {
+  display: block;
+  width: 200px;
+  height: auto;
+}
+
+#crocodile_captures_map ul li::before {
+  color: #d55028;
+  content: "";
+  display: block;
+  font-size: 20px;
+  left: -20px;
+  max-height: 0;
+  max-width: 0;
+  position: relative;
+  top: -2px;
+}
+
+#crocodile_captures_map ul li {
+  list-style-type: none;
+  margin-bottom: 10px;
+  margin-top: 8px;
+  padding-left: 0px;
+}
+
+#all_captures_table,
+#fresh_water_captures_table {
+  width: 100%;
+}
+
+.loader_icon {
+  text-align: center;
+}
+
+.pest_animal_control_header {
+  margin: 30px 0;
+}
+
+.pest_animal_control_header .left {
+  float: left;
+}
+
+.pest_animal_control_header .right {
+  float: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.form_multisections fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form_multisections .sq-form-question-answer label,
+.form_multisections .sq-form-question-option-list li,
+.form-list-margin.animal_welfare_division ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.form_multisections .sq-form-question {
+  padding: 0;
+  margin: 0;
+}
+
+.hidden_for_other_radio_btn+label {
+  display: none;
+}
+
+label[for="q229468_q4"],
+.form_multisections .sq-form-question-tickbox-list .sq-form-question-title,
+.form_multisections .sq-form-section:nth-child(5) .sq-form-section-title,
+.form_multisections .sq-form-section:nth-child(5) .sq-form-question.sq-form-question-text,
+.form_multisections label[for="q229469_q1"],
+input[name="q229469:q1"] {
+  display: none;
+}
+
+.form_multisections .sq-form-section-title {
+  border-top: none;
+}
+
+.if_yes_option {
+  display: none;
+}
+
+.atachments_form>div {
+  margin-bottom: 15px;
+}
+
+.atachments_form .hidden_el {
+  display: none;
+}
+
+form p.error {
+  color: red;
+}
+
+form#picSearch label,
+#brandsSearch label {
+  display: block;
+  font-weight: bold;
+}
+
+.notes_usefull_links td,
+.notes_usefull_links th {
+  border-bottom: none;
+}
+
+.notes_usefull_links table {
+  margin: 0;
+}
+
+.session_value_form ul {
+  margin-bottom: 0;
+}
+
+.display_n {
+  display: none;
+}
+
+.st-head-row a {
+  color: $ntg-color-white;
+}
+
+.courtList .ui-tabs .ui-tabs-nav li.ui-tabs-active a,
+.courtList .ui-tabs .ui-tabs-nav li.ui-state-hover a {
+  color: $ntg-arafura-blue !important;
+  /*color: $ntg-arafura-blue-variant !important;*/
+}
+
+.stacktable {
+  width: 100%;
+}
+
+.st-head-row {
+  padding-top: 1em;
+}
+
+.st-head-row.st-head-row-main {
+  font-size: 1.5em;
+  padding-top: 0;
+}
+
+.st-key {
+  width: 49%;
+  text-align: right;
+  padding-right: 1%;
+}
+
+.st-val {
+  width: 49%;
+  padding-left: 1%;
+}
+
+/* Stack rows vertically on small screens */
+@include media-breakpoint-down(md) {
+
+  // @media (max-width: 768px) {
+  /* Hide column labels */
+  #crocodile_captures_tables thead tr {
+    position: absolute;
+    top: -9999em;
+    left: -9999em;
+  }
+
+  /* Leave a space between table rows */
+  #crocodile_captures_tables tr+tr {
+    margin-top: 1.5em;
+  }
+
+  /* Get table cells to act like rows */
+  #crocodile_captures_tables tr {
+    width: 100%;
+  }
+
+  #crocodile_captures_tables tr,
+  #crocodile_captures_tables td {
+    display: block;
+  }
+
+  /* Leave a space for data labels */
+  #crocodile_captures_tables td {
+    padding-left: 50%;
+    width: 50%;
+  }
+
+  #crocodile_captures_tables td:first-child {
+    padding-left: 0%;
+    width: 100%;
+    background-color: #595959;
+    color: $ntg-color-white;
+    text-align: center;
+  }
+
+  /* Add data labels */
+  #crocodile_captures_tables td:before {
+    content: attr(data-attr);
+    display: inline-block;
+    margin-left: -100%;
+    width: 100%;
+  }
+
+  // }
+
+}
+
+/* Stack labels vertically on smaller screens */
+@media (max-width: 320px) {
+  #crocodile_captures_tables td {
+    padding-left: 0;
+  }
+
+  #crocodile_captures_tables td:before {
+    display: block;
+    margin-left: 0;
+  }
+}
+
+#consultation {
+  background-color: #1b4377;
+  color: $ntg-color-white;
+  padding: 50px;
+}
+
+#consultation h1 {
+  color: $ntg-color-white;
+}
+
+/*
+  text align helper
+*/
+.right {
+  text-align: right;
+}

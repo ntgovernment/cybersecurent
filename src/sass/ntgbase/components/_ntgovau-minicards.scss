@@ -1,0 +1,34 @@
+/*
+-----------------------------
+Mini cards
+-----------------------------
+*/
+
+/* Mini cards */
+.ntg-minicard {
+  width: 18rem;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  margin-left: 10px;
+  text-align: center;
+
+  /* Mini cards icon */
+  &_icon {
+    color: $ntg-ochre;
+    padding-bottom: 15px;
+  }
+
+  /* Mini cards body */
+  &_body {
+    a {
+      color: $ntg-arafura-blue;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1rem;
+      &:hover {
+        text-decoration: underline;
+        color: $ntg-ochre;
+      }
+    }
+  }
+}

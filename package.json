@@ -1,0 +1,29 @@
+{
+  "name": "cybersecurent",
+  "version": "1.0.0",
+  "description": "Cyber Secure NT build using the NTG Design System for web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "grunt": "grunt run"
+  },
+  "author": "Brainium Labs",
+  "license": "MIT",
+  "devDependencies": {
+    "colors": "^1.4.0",
+    "grunt": "^1.6.1",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-connect": "^3.0.0",
+    "grunt-contrib-cssmin": "^4.0.0",
+    "grunt-contrib-sass": "^2.0.0",
+    "grunt-contrib-uglify": "^5.2.2",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-css": "^0.4.1",
+    "sass": "^1.85.0"
+  },
+  "dependencies": {
+    "grunt-cli": "^1.4.3",
+    "sass-mixins": "^0.13.0"
+  }
+}

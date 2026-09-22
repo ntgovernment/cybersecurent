@@ -1,0 +1,80 @@
+.ntg-banner-alert {
+    $this: &;
+    padding: 1rem 0;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &__icon {
+        &::before {
+            @extend .fa;
+            @include font-size(32px);
+        }
+    }
+
+    &__content {
+        width: 100%;
+
+        h2 {
+            @include font-size(20px);
+            color: inherit;
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            max-width: initial !important;
+        }
+
+        a {
+            color: inherit;
+
+            &:hover {
+                color: inherit;
+                text-decoration: none;
+            }
+        }
+
+        > * {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &--danger {
+        background-color: $ntg-banner-alert-danger;
+        color: $white;
+
+        #{$this}__icon {
+            &::before {
+                content: "\f071";
+            }
+        }
+    }
+
+    &--warning {
+        background-color: $ntg-banner-alert-warning;
+        color: $white;
+
+        #{$this}__icon {
+            &::before {
+                content: "\f0f3";
+            }
+        }
+    }
+
+    &--info {
+        background-color: $ntg-banner-alert-info;
+        color: $white;
+
+        #{$this}__icon {
+            &::before {
+                content: "\f059";
+            }
+        }
+    }
+}

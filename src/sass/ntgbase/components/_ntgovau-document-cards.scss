@@ -1,0 +1,43 @@
+/*
+-----------------------------
+Document cards
+-----------------------------
+*/
+
+.ntg-document-cards {
+  a.external::after {
+    content: none;
+  }
+
+  .card {
+    &-body {
+      padding: 0 !important;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &-img-top {
+        max-height: 300px;
+        width: auto;
+        height: 100%;
+        margin-bottom: 1rem;
+    }
+
+    span {
+      display: block;
+    }
+  }
+}
+
+@media print {
+  .ntg-document-cards {
+    .card-img-top {
+      max-width: 30%;
+      display: block;
+      page-break-after: avoid;
+      page-break-before: avoid;
+    }
+  }
+}

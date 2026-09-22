@@ -1,0 +1,28 @@
+
+/*
+-----------------------------
+  Style guide
+-----------------------------  
+*/
+.style-guide-items {
+  margin-top: 25px;
+}
+
+.style-guide-items li {
+  padding-left: 0;
+  width: 48%;
+  margin-right: 1%;
+  display: inline-block;
+  min-height: 100px;
+  vertical-align: top;
+}
+
+.style-guide-items ul li::before {
+  content: none;
+}
+
+@media screen and (max-width: 768px) {
+  .style-guide-items li {
+    width: 100%;
+  }
+}

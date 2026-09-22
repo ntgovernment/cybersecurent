@@ -1,0 +1,174 @@
+<!-- <script>
+  //Set Print Date
+  const dateContainer = document.getElementById("print-date");
+  const currentDate = new Date();
+  dateContainer.setAttribute("data-date", currentDate.toLocaleDateString());
+</script> -->
+
+<div class="container-xl">
+  <!-- <div class="back-to-top d-print-none">
+    <a href="#header"><span class="text-hide">Back to top</span></a>
+  </div> -->
+
+  <div class="back-to-top" aria-hidden="true">
+    <button>
+      <span class="visually-hidden">Back to top</span>
+      <i class="far fa-chevron-up"></i>
+    </button>
+  </div>
+
+  <div class="row ntg-footer__links d-print-none">
+    <div class="col-md-6 col-lg-3 pe-md-5">
+      <h3>Find out more</h3>
+
+      <ul>
+        <li><a href="#">About government</a></li>
+        <li><a href="#">Public consultations</a></li>
+        <li><a href="#">NT public holidays</a></li>
+        <li><a href="#">Media releases</a></li>
+        <li><a href="#">Government grants</a></li>
+        <li><a href="#">Government directory</a></li>
+      </ul>
+    </div>
+
+    <div
+      class="col-md-6 col-lg-3 pe-md-5 ntg-footer__links--social d-print-none"
+    >
+      <h3>Connect with us</h3>
+
+      <ul>
+        <li>
+          <a href="#"><i class="fab fa-facebook-square fa-2x"></i> Facebook</a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-linkedin fa-2x"></i> LinkedIn</a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-youtube-square fa-2x"></i> Youtube</a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-instagram fa-2x"></i> Instagram</a>
+        </li>
+        <li>
+          <a href="#"><i class="fal fa-comment fa-2x"></i> Have Your Say</a>
+        </li>
+      </ul>
+    </div>
+
+    <div
+      class="col-md-6 col-lg-3 pe-md-5 ntg-footer__links--utility d-print-none"
+    >
+      <ul>
+        <li>
+          <a href="https://nt.gov.au/page/copyright-disclaimer-and-privacy"
+            >Copyright, disclaimer and privacy</a
+          >
+        </li>
+        <li>
+          <a href="https://nt.gov.au/law/rights/freedom-of-information"
+            >Freedom of information</a
+          >
+        </li>
+        <li>
+          <a href="https://nt.gov.au/page/interpreter-services"
+            >Interpreter services</a
+          >
+        </li>
+        <li>
+          <a href="https://nt.gov.au/page/accessibility">Accessibility</a>
+        </li>
+        <li>
+          <a href="#">Site map</a>
+        </li>
+        <li>
+          <a href="#">Contacts</a>
+        </li>
+        <li>
+          <a
+            href="https://nt.gov.au/contacts/northern-territory-government-staff-systems-remotely"
+            >NTG staff systems</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-md-6 col-lg-3">
+      <a href="#" class="ntg-footer__logo">
+        <img
+          src="https://nt.gov.au/__data/assets/file/0007/1443625/logo-ntg-mono.svg"
+          alt="Visit NT.GOV.AU"
+        />
+      </a>
+      <div class="ntg-footer__text">
+        <p>
+          The Northern Territory Government acknowledges the Traditional Owners
+          of the Northern Territory and recognises their continuing cultural and
+          spiritual connections to the lands, waters and communities. We pay our
+          respects to all Aboriginal and Torres Strait Islander people and their
+          cultures, their Elders past and present, and to future generations
+        </p>
+        <p>&copy; 2025 Northern Territory Government of Australia</p>
+      </div>
+    </div>
+  </div>
+
+  <div
+    id="footerFeedbackSection"
+    class="feedback-container"
+    data-feedback-form-url="./?a=1264390"
+    data-feedback-form-id="%globals_asset_assetid:1264391%"
+  >
+    <h3 class="mb-2">Was this helpful?</h3>
+
+    <label class="feedback-option" id="likeLabel">
+      <input type="radio" name="q1264391:q1" value="0" />
+      <i class="far fa-thumbs-up"></i>
+    </label>
+
+    <label class="feedback-option" id="dislikeLabel">
+      <input type="radio" name="q1264391:q1" value="1" />
+      <i class="far fa-thumbs-down"></i>
+    </label>
+  </div>
+
+  <!-- Toast Container -->
+  <div id="feedbackToastContainer" class="toast-container position-fixed">
+    <div
+      id="feedbackToastSuccess"
+      class="toast align-items-center text-bg-success border-0"
+      role="alert"
+      aria-live="assertive"
+      aria-atomic="true"
+    >
+      <div class="d-flex">
+        <div class="toast-body">Thanks for your feedback!</div>
+        <button
+          type="button"
+          class="btn-close btn-close-white me-2 m-auto"
+          data-bs-dismiss="toast"
+          aria-label="Close"
+        ></button>
+      </div>
+    </div>
+
+    <div
+      id="feedbackToastError"
+      class="toast align-items-center text-bg-danger border-0"
+      role="alert"
+      aria-live="assertive"
+      aria-atomic="true"
+    >
+      <div class="d-flex">
+        <div class="toast-body">
+          There was an error submitting your feedback. Please try again later.
+        </div>
+        <button
+          type="button"
+          class="btn-close btn-close-white me-2 m-auto"
+          data-bs-dismiss="toast"
+          aria-label="Close"
+        ></button>
+      </div>
+    </div>
+  </div>
+</div>

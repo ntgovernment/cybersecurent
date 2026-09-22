@@ -1,0 +1,23 @@
+
+/*
+-----------------------------
+  Search pagination
+-----------------------------  
+*/
+.search-wrapper .pagination li.page-item a {
+    color: $ntg-arafura-blue;
+}
+.search-wrapper .pagination li.page-item.active a {
+    color: $ntg-color-white;
+}
+.search-wrapper .pagination li.page-item:before {
+  content: '';
+}
+.search-wrapper .pagination li.page-item a:hover {
+    border-width: 1px;
+    padding-bottom: 0.5rem;
+}
+.search-wrapper .pagination li.page-item.active a.page-link {
+    background: $ntg-arafura-blue;
+    border-color: $ntg-arafura-blue;
+}

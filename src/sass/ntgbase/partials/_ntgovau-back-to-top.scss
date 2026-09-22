@@ -1,0 +1,79 @@
+/*
+-----------------------------
+  Back to top
+-----------------------------
+*/
+// .back-to-top {
+//   position: fixed;
+//   bottom: 30px;
+//   right: 30px;
+//   display: none;
+//   background: $grey-dark-100;
+//   border-radius: 3px;
+//   z-index: 1000;
+// }
+
+// .back-to-top a {
+//   border: none;
+//   text-decoration: none;
+//   display: block;
+//   padding: 5px 14px;
+// }
+
+// .back-to-top a:hover {
+//   border: none;
+//   text-decoration: none;
+//   display: block;
+//   padding: 5px 14px;
+// }
+
+// .back-to-top a:after {
+//   content: "\f106";
+//   color: $ntg-color-white;
+//   font-family: "Font Awesome 6 Pro";
+//   font-size: 30px;
+//   line-height: 1;
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+//   border: none;
+//   text-decoration: none;
+// }
+
+// .text-hide {
+//   display: none !important;
+// }
+
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: none;
+  background: #595959;
+  border-radius: 50%;
+  z-index: 1000;
+  transition: 0.2s background ease-in-out;
+
+  &:hover {
+    background: $secondary;
+  }
+
+  button {
+    background-color: transparent;
+    appearance: none;
+    border: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: inherit;
+  }
+
+  i {
+    color: $white;
+    height: 22px;
+    display: flex;
+    align-items: center;
+  }
+}

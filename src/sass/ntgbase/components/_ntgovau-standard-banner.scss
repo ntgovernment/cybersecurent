@@ -1,0 +1,85 @@
+.ntg-standard-banner {
+    $this: &;
+    display: flex;
+    min-height: 250px;
+    background-color: $secondary;
+    color: $ntg-color-white;
+
+    &__content {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+
+        > * {
+            color: inherit;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        a {
+            align-self: flex-start;
+        }
+
+        .ntg-breadcrumbs {
+            .breadcrumb-item {
+                a,
+                + .breadcrumb-item::before,
+                &.active {
+                    color: inherit !important;
+                }
+
+                a {
+                    text-decoration: underline;
+
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+
+    &--with-image {
+        min-height: 300px;
+
+        @include media-breakpoint-up(lg) {
+            position: relative;
+        }
+
+        @include media-breakpoint-down(lg) {
+            flex-direction: column;
+        }
+
+        #{$this}__image {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            
+            @include media-breakpoint-up(lg) {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                width: 40%;
+                border-bottom-left-radius: 200px;
+            }
+
+            @include media-breakpoint-down(lg) {
+                width: 100%;
+                height: 200px;
+            }
+        }
+
+        #{$this}__content {
+            @include media-breakpoint-up(lg) {
+                width: 60%;
+                padding-right: 2rem;
+            }
+        }
+    }
+}

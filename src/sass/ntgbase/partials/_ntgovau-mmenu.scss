@@ -1,0 +1,243 @@
+// fix content flash
+#mmenu-wrapper:not(.mm-menu) {
+  display: none;
+}
+
+// fix modal backdrop
+:where(.mm-slideout) {
+  z-index: var(--bs-backdrop-zindex) + 1;
+}
+
+.mm-menu {
+  z-index: 1000;
+}
+
+.mm-wrapper--position-bottom .mm-wrapper__blocker,
+.mm-wrapper--position-left-front .mm-wrapper__blocker,
+.mm-wrapper--position-right-front .mm-wrapper__blocker,
+.mm-wrapper--position-top .mm-wrapper__blocker {
+  z-index: 999;
+}
+
+.mm-navbars--bottom {
+  border-top: 0;
+
+  .btn {
+    color: $white !important;
+    background-color: $ntg-cyan;
+    font-weight: 700;
+    border: 0;
+    transition: 0.2s background-color ease-in-out;
+
+    &:hover {
+      background-color: tint-color($ntg-cyan, 15%);
+    }
+
+    &-mmenu {
+      border-radius: 0;
+    }
+  }
+}
+
+.mm-panels {
+  --mm-color-text: $white;
+
+  .mm-btn--close {
+    line-height: 1;
+
+    &::before {
+      @extend .fa;
+      content: "\f00d";
+      display: inline-block;
+      font-size: 1.5rem;
+      font-weight: 900 !important;
+      line-height: 1;
+      margin-top: 2px;
+    }
+
+    &-wrapper {
+      color: $white !important;
+      background: $ntg-sky-blue;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      position: absolute;
+      right: 0;
+      z-index: 99;
+      width: 110px;
+      height: 62px;
+      transition: 0.2s background ease-in-out;
+
+      &:hover,
+      &:focus {
+        background: lighten($ntg-sky-blue, 15%);
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  > .mm-panel {
+    color: $white;
+    background: $primary;
+
+    .mm-navbar {
+      background: $primary;
+      border-color: $white;
+
+      > a {
+        transition: 0.2s background-color ease-in-out, 0.2s opacity ease-in-out;
+      }
+
+      .mm-btn--prev {
+        width: 50px;
+
+        &::before {
+          width: 12px;
+          height: 12px;
+          border-width: 3px;
+          border-color: $white;
+        }
+      }
+
+      .mm-navbar__title {
+        padding: 20px 20px;
+        padding-right: 130px;
+        justify-content: start;
+
+        > span {
+          text-align: left;
+          color: $white;
+        }
+
+        &::after {
+          content: none;
+        }
+      }
+
+      .mm-btn--prev + .mm-navbar__title {
+        padding-left: 0;
+      }
+
+      &:hover,
+      &:focus {
+        .mm-btn--prev,
+        .mm-btn--prev + .mm-navbar__title {
+          opacity: 0.6;
+        }
+      }
+    }
+
+    .mm-listview {
+      margin: 20px -20px;
+      position: relative;
+
+      &:first-of-type {
+        margin-top: 0;
+      }
+
+      .mm-listitem {
+        position: relative;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          z-index: -2;
+          background-color: $white;
+          transition: 0.2s opacity ease-in-out;
+        }
+      }
+
+      a {
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          z-index: -1;
+          background-color: $primary;
+          transition: 0.2s opacity ease-in-out;
+        }
+
+        &:hover,
+        &:focus {
+          &::before {
+            opacity: 0.8;
+          }
+        }
+      }
+
+      a:not(.mm-btn--next) {
+        position: relative;
+        border-left: 0px solid $white;
+        transition: 0.1s border-left-width ease-in-out,
+          0.2s background-color ease-in-out;
+      }
+
+      a.mm-btn--next {
+        transition: 0.2s background-color ease-in-out;
+      }
+    }
+
+    .mm-listitem {
+      padding: 0 20px 1px 20px;
+      margin-bottom: 0 !important;
+      border-color: $white;
+    }
+
+    .mm-listitem__btn {
+      border-color: $white;
+    }
+
+    .mm-listitem__text {
+      white-space: normal;
+      padding-top: 20px;
+      padding-bottom: 20px;
+
+      @include media-breakpoint-up(md) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+    }
+
+    .mm-btn {
+      &:after {
+        border-color: $white;
+        border-width: 3px;
+        height: 12px;
+        width: 12px;
+      }
+    }
+
+    a {
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+
+.mm-static-links {
+  ul {
+    @extend .list-unstyled;
+  }
+
+  li {
+    padding: 10px 20px;
+  }
+
+  a {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

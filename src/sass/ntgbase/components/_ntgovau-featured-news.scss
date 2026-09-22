@@ -1,0 +1,17 @@
+.ntg-featured-news {
+  &__heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+
+    h2 {
+      margin: 0;
+    }
+
+    .btn {
+      align-self: flex-start;
+      font-weight: 400 !important;
+    }
+  }
+}

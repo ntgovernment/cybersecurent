@@ -1,0 +1,202 @@
+/*
+-----------------------------
+  Search
+-----------------------------
+*/
+// form.search .input-group {
+//     /*border: 4px solid #1d5f97;
+//     border-radius: 7px;*/
+//   }
+form.search .input-group:focus-within,
+form.search .input-group:focus-within,
+form.search .input-group:active {
+  border-color: $ntg-search-primary;
+}
+
+form.search .form-control {
+  padding: 12px 12px 12px 10px;
+  min-width: 220px;
+  /*min-width: 250px;*/
+}
+
+form.search .input-group-append button {
+  background-image: -webkit-linear-gradient($ntg-search-secondary 0%,
+      $ntg-search-secondary-alt 100%);
+  background-image: -o-linear-gradient($ntg-search-secondary 0%,
+      $ntg-search-secondary-alt 100%);
+  background-image: linear-gradient($ntg-search-secondary 0%,
+      $ntg-search-secondary-alt 100%);
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 0 0.25rem 0.25rem 0;
+  border: 0;
+}
+
+form.search .input-group-append button::before {
+  content: "\f002";
+  font-family: "Font Awesome 6 Pro";
+  color: $ntg-color-white;
+}
+
+form.search .input-group-append button:hover {
+  background-image: -webkit-linear-gradient(bottom,
+      $ntg-search-dark 1%,
+      $ntg-search-mid 100%);
+  background-image: -o-linear-gradient(bottom,
+      $ntg-search-dark 1%,
+      $ntg-search-mid 100%);
+  background-image: linear-gradient(to top,
+      $ntg-search-dark 1%,
+      $ntg-search-mid 100%);
+}
+
+.page .banner-search .input-group {
+  width: 100%;
+}
+
+.search-result a.external::after {
+  content: "";
+}
+
+.search-result .search-title {
+  font-weight: bold;
+}
+
+.search-result .search-breadcrumb a {
+  color: $ntg-search-light;
+  border-bottom: none;
+  font-size: 14px;
+}
+
+// @media (max-width: 768px) {
+//   form.search .form-control {
+//     /*width: 220px;*/
+//   }
+// }
+
+@media (min-width: 1200px) {
+  .banner-search-home {
+    width: 60%;
+  }
+}
+
+.banner-search-home .form-inline input,
+.banner-search-home .form-inline .input-group {
+  border: none;
+  background: none;
+  padding-left: 0;
+}
+
+.banner-search-home .form-inline .btn {
+  background: none;
+}
+
+.banner-search-home .form-inline .form-control:focus {
+  box-shadow: none;
+}
+
+.banner-search-home .form-inline .form-control {
+  color: $ntg-color-white;
+}
+
+.banner-search-home .form-inline .form-control,
+.banner-search-home .form-inline .form-control::placeholder {
+  color: $ntg-color-white;
+}
+
+.banner-search-home .form-inline .form-control::-webkit-input-placeholder {
+  color: $ntg-color-white;
+}
+
+.banner-search-home .form-inline .form-control:-ms-input-placeholder {
+  color: $ntg-color-white;
+}
+
+.banner-search-home .form-inline .form-control::-ms-input-placeholder {
+  color: $ntg-color-white;
+}
+
+.banner-search-home .form-inline .form-control {
+  padding-right: 0px;
+}
+
+.form-control::-ms-clear {
+  display: none;
+}
+
+.banner-search-home .form-inline .input-group {
+  border-bottom: 2px solid $ntg-grey-medium;
+  border-radius: 0;
+  width: 100%;
+}
+
+.banner-search-home .form-inline .input-group button::before {
+  color: $ntg-grey-medium;
+}
+
+.banner-search-home .form-inline .input-group:focus button {
+  color: $ntg-color-black;
+}
+
+.banner-search-home .form-inline .input-group button:hover {
+  background: none;
+}
+
+.banner-search-home .form-inline .input-group button:hover::before {
+  color: $ntg-color-black;
+}
+
+/*
+-----------------------------
+NTGOV AU Search
+-----------------------------
+*/
+
+form.search {
+  display: flex;
+  align-items: center;
+
+  .input-group:focus-within,
+  .input-group:active {
+    border-color: $primary;
+  }
+
+  .form-control {
+    padding: 12px 12px 12px 10px;
+    min-width: 220px;
+  }
+
+  .input-group-append {
+    display: -ms-flexbox;
+    display: flex;
+
+    button {
+      background: $secondary;
+      background-image: none;
+      padding-left: 20px;
+      padding-right: 20px;
+      border-radius: 0 0.25rem 0.25rem 0;
+      border: 0;
+
+      span {
+        display: none;
+      }
+
+      &:before {
+        content: "\f002";
+        font-family: "Font Awesome 6 Pro";
+        color: $ntg-color-white;
+      }
+
+      :hover {
+        background: darken($primary, 20%);
+      }
+    }
+  }
+}
+
+.mobile-banner {
+  background-color: $primary;
+  z-index: 100;
+  position: relative;
+}

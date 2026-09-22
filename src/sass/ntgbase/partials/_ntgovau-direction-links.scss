@@ -1,0 +1,33 @@
+/*
+-----------------------------
+  Direction links
+-----------------------------
+*/
+.back-to-top {
+  position: fixed;
+  bottom: 20%;
+  right: pxToRem(30px);
+  display: none;
+  background: $grey-dark-100;
+  border-radius: 3px;
+  z-index: 1000;
+
+  a {
+    border: none;
+    text-decoration: none;
+    display: block;
+    padding: pxToRem(7px 12px);
+
+    &:after {
+      content: "\f106";
+      color: $ntg-color-white;
+      font-family: $font-icons;
+      font-size: pxToRem(30px);
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      border: none;
+      text-decoration: none;
+    }
+  }
+}

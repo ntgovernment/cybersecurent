@@ -1,0 +1,30 @@
+@media print {
+  /*hide all images*/
+
+  /* img {
+    display: none;
+  } */
+
+  /*show the NTG logo and set its size*/
+  .container img[alt="ntg-mono"] {
+    display: block;
+    width: 200px;
+    height: 71px;
+  }
+  /*add the printed date*/
+  #print-date {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: 12px;
+
+    &:before {
+      content: attr(data-date);
+      display: none;
+    }
+
+    &:after {
+      content: "Printed on:" attr(data-date);
+    }
+  }
+}

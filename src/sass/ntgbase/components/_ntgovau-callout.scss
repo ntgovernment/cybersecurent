@@ -1,0 +1,209 @@
+/*
+-----------------------------
+Callout
+-----------------------------
+*/
+
+/* Callout */
+.ntg-callout {
+  $this: &;
+  border: 1px solid $ntg-arafura-blue;
+
+  &__content {
+    border-left: 0.5rem solid $ntg-arafura-blue;
+    border-radius: 0 !important;
+    background-color: transparent;
+  }
+
+  /* Callout icon */
+  &__icon {
+    font-family: $font-icons;
+    color: $ntg-arafura-blue;
+    margin-right: 1.25rem;
+    margin-top: -0.5rem;
+    font-size: 1.5rem;
+  }
+
+  /* Callout spacing */
+  &__text {
+    padding-right: 2rem !important;
+    width: 100%;
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin-bottom: 1rem;
+      margin-top: 0;
+    }
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__heading {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    color: $primary;
+
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: inherit;
+      margin-bottom: 0;
+    }
+
+    .ntg-callout__icon {
+      margin-top: 0;
+    }
+
+    &:has(h2) {
+      .ntg-callout__icon {
+        @include font-size($h2-font-size);
+      }
+    }
+    &:has(h3) {
+      .ntg-callout__icon {
+        @include font-size($h3-font-size);
+      }
+    }
+    &:has(h4) {
+      .ntg-callout__icon {
+        @include font-size($h4-font-size);
+      }
+    }
+    &:has(h5) {
+      .ntg-callout__icon {
+        @include font-size($h5-font-size);
+      }
+    }
+    &:has(h6) {
+      .ntg-callout__icon {
+        @include font-size($h6-font-size);
+      }
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: $ntg-color-dark;
+    .ntg-callout__content::after {
+      font-family: $font-icons;
+      color: $ntg-arafura-blue;
+      font-weight: 900;
+      content: "\f105";
+      font-size: 1.5rem;
+      display: flex;
+      align-items: center !important;
+    }
+
+    &:hover {
+      color: $ntg-color-dark;
+      .ntg-callout__content::after {
+        color: $ntg-ochre;
+      }
+    }
+  }
+
+  &--primary-alt {
+    border-color: transparent;
+    background-color: $ntg-lightgrey;
+  }
+
+  &--secondary {
+    border-color: $secondary;
+
+    #{$this}__content {
+      border-left-color: $secondary;
+    }
+
+    #{$this}__heading {
+      color: $body-color;
+    }
+
+    #{$this}__icon {
+      color: $secondary;
+    }
+  }
+
+  &--gray {
+    border-color: $grey-dark-400;
+
+    #{$this}__content {
+      border-left-color: $grey-dark-400;
+    }
+
+    #{$this}__heading {
+      color: $body-color;
+    }
+
+    #{$this}__icon {
+      color: $grey-dark-400;
+    }
+  }
+
+  &--red {
+    border-color: $danger;
+
+    #{$this}__content {
+      border-left-color: $danger;
+    }
+
+    #{$this}__heading {
+      color: $body-color;
+    }
+
+    #{$this}__icon {
+      color: $danger;
+    }
+  }
+  
+
+  &--red-alt {
+    border-color: transparent;
+    background-color: $ntg-lightgrey;
+
+    #{$this}__content {
+      border-left-color: $danger;
+    }
+
+    #{$this}__heading {
+      color: $body-color;
+    }
+
+    #{$this}__icon {
+      color: $danger;
+    }
+  }
+
+  &--secondary-alt {
+    border-color: transparent;
+    background-color: $ntg-lightgrey;
+
+    #{$this}__content {
+      border-left-color: $secondary;
+    }
+
+    #{$this}__heading {
+      color: $body-color;
+    }
+
+    #{$this}__icon {
+      color: $secondary;
+    }
+  }
+}
+
+.ntg-callout__text {
+  a {
+    color: $ntg-arafura-blue;
+    text-decoration: underline;
+  }
+  a:hover {
+    color: $ntg-ochre;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,217 @@
+//** Buttons **//
+
+.btn {
+  &.ntg-btn {
+    display: inline-block;
+    appearance: none;
+    background: $primary;
+    color: $ntg-color-white;
+    min-width: pxToRem(98px);
+    padding: pxToRem(12px 16px);
+    border: 2px solid transparent;
+    border-radius: pxToRem(10px);
+    cursor: pointer;
+    vertical-align: middle;
+    transition: background 200ms ease, color 200ms ease, border-color 200ms ease;
+    // border-width: 0;
+    font-weight: 700;
+
+    @include background-clip-default;
+
+    //Primary buttons
+    &--primary {
+      border-color: $primary;
+
+      &:hover {
+        background-color: $ntg-orange-bright;
+        color: $ntg-color-white;
+        border-color: $ntg-orange-bright;
+        @include background-clip-default;
+      }
+
+      &:focus {
+        //border-color: $ntg-color-hexE35205-50opacity;
+        outline: 1.5px solid $ntg-color-hexE35205-50opacity;
+        //box-shadow: 0 0 0 0.25rem $ntg-color-hexE35205-50opacity;
+        //outline: 0;
+        // border-radius: 0;
+        color: $ntg-color-white;
+      }
+      &:active {
+        background: $primary;
+        // border: 4px solid transparent;
+        @include background-clip-default;
+      }
+
+      &:disabled {
+        //border: 4px solid transparent;
+        cursor: default;
+        background: $light;
+        color: $light-400;
+        @include background-clip-default;
+      }
+
+      &--center {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        display: block;
+        width: 50%;
+      }
+    }
+
+    //Secondary buttons
+
+    &--secondary {
+      background: $ntg-color-white;
+      color: $ntg-color-black;
+      // box-shadow: 0px 0px 0px 1.5px $primary inset;
+      // transition: color 200ms ease;
+      padding: pxToRem(12px 16px);
+      // border: 0;
+      // border-radius: 0;
+      border-color: $ntg-color-white;
+      @include background-clip-default;
+
+      &:hover {
+        // box-shadow: 0px 0px 0px 1.5px $primary-mid inset;
+        background-color: $secondary;
+        color: $ntg-color-white;
+        border-color: $secondary;
+      }
+
+      &:focus {
+        //border: 4px solid $ntg-color-hexE35205-50opacity;
+        outline: 2px solid $ntg-color-hexE35205-50opacity;
+      }
+
+      &:active {
+        //background: $ntg-color-white;
+        color: $primary;
+        //border: 4px solid transparent;
+      }
+    }
+
+    //Tertiary buttons
+
+    &--tertiary {
+      background: $ntg-orange-bright;
+      color: $ntg-color-white;
+      // padding: pxToRem(8px 16px);
+      height: auto;
+      // border: none;
+      // border-radius: 0;
+      border-color: $ntg-orange-bright;
+      min-width: auto;
+      // transition: color 200ms ease;
+      position: relative;
+
+      &:hover {
+        background: $ntg-grey-dark;
+        color: $ntg-color-white;
+        border-color: $ntg-grey-dark;
+
+        &::before {
+          right: -16px;
+          transition: right 300ms ease;
+        }
+      }
+
+      &:focus {
+        box-shadow: none;
+      }
+
+      &:active {
+        color: $primary;
+        outline: 0;
+      }
+
+      &:disabled {
+        color: $light;
+      }
+
+      &:disabled::after {
+        color: $light;
+        right: -8px;
+      }
+    }
+
+    // &--tertiary::before {
+    //   font-family: $font-icons;
+    //   content: "\f178";
+    //   color: $secondary;
+    //   font-weight: 400;
+    //   position: absolute;
+    //   right: -8px;
+    //   top: 0.6rem;
+    //   transition: right 300ms ease;
+    // }
+
+    &.external {
+      &:after {
+        content: "\f08e";
+        font-family: $font-icons;
+        padding-left: pxToRem(8px);
+        font-size: $font-size-sm;
+      }
+    }
+  }
+  
+  &-close {
+    opacity: 1;
+  }
+}
+
+// /*
+//   NTG button style
+// */
+
+// .ntg-body a.btn {
+//     text-decoration: none;
+//     color: $ntg-color-white;
+//     min-width: auto;
+//     border-bottom: none;
+//     border-width: unset !important;
+
+//     &:hover {
+//         color: $ntg-color-white !important;
+//         border-width: unset !important;
+//     }
+
+//     &:focus {
+//         //outline: none;
+//         color: $primary;
+//     }
+
+//     &[href^="mailto:"] {
+//         color: $ntg-color-white;
+//     }
+
+//     &.ntg-btn--secondary, &.ntg-btn--tertiary {
+//         &[href^="mailto:"] {
+//             color: $primary;
+//         }
+//     }
+// }
+
+// .ntg-body .btn {
+//     padding: 8px 25px !important;
+//     transition: background-color 0.4s ease-in;
+//   }
+//   .btn.btn-primary {
+//     border: initial;
+//     background-color: $ntg-ochre-mid;
+//   }
+//   .btn.btn-primary:hover {
+//     background-color: $ntg-arafura-blue;
+//     /*background-color: $primary-variant;*/
+//   }
+
+//   .btn.external::after {
+//     content: none;
+//   }
+
+//   .btn.skyblue {
+//     background-color: $ntg-sky-blue;
+//     color: $ntg-color-white;
+//   }

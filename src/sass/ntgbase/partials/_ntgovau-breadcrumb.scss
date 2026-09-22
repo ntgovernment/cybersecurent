@@ -1,0 +1,45 @@
+/*
+-----------------------------
+  Breadcrumb
+-----------------------------
+*/
+.breadcrumb-container {
+  background-color: $grey-400;
+}
+
+.ntg-breadcrumbs {
+  margin-top: -0.6rem;
+  padding-bottom: 1rem;
+
+  .breadcrumb {
+    font-size: pxToRem(16px);
+    margin-bottom: 0rem;
+
+    &-item {
+      a {
+        color: $primary;
+        text-decoration: none;
+        padding-bottom: 1px;
+        &:hover {
+          color: $secondary;
+          border: none;
+        }
+      }
+      &.active {
+        color: $ntg-color-dark !important;
+      }
+      // Display the separator before each breadcrumb item except for the first one.
+      + .breadcrumb-item {
+        &::before {
+          font-family: $font-icons;
+          // content: "\3e" !important;
+          content: "\f054" !important;
+          font-size: pxToRem(12px);
+          padding-top: pxToRem(2.5px);
+          color: $secondary;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

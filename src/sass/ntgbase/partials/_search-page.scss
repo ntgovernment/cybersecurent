@@ -1,0 +1,61 @@
+.ntg-search-page {
+    &__search {
+        @media (max-width: 991.98px) {
+            display: block;
+        }
+
+        .input-group > .form-control + button {
+            display: flex;
+            width: auto;
+            gap: 0.5rem;
+            color: $ntg-color-white;
+            align-items: center;
+            justify-content: center;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+    }
+
+    &__result-item {
+      border-bottom: 1px solid #CCC;;
+      transition: all 0.2s ease;
+    }
+
+    .result-item:hover {
+      background-color: #f8f9fa;
+      border-left-color: #0d6efd;
+      cursor: pointer;
+    }
+
+    .result-title {
+      color: #336699;
+      font-weight: 700;
+      text-decoration: underline;
+      margin-bottom: 1rem;
+      display: block;
+      padding-bottom: 0;
+    }
+
+    .result-title:hover {
+      text-decoration: none;
+      padding-bottom: 0;
+    }
+
+    .results-description {
+        color: #3A3440;
+    }
+
+    .sort-box label {
+      font-weight: 500;
+    }
+
+    .form-check {
+      position: relative;
+      margin-bottom: 1rem;
+    }
+    
+    #mobileSortSelect {
+      height: 50px;
+      max-width: 602px;;
+    }
+}

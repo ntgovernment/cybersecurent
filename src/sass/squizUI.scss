@@ -1,0 +1,83 @@
+// Import bootstrap mixins
+
+@import "bootstrap/5.2.4/mixins/banner";
+@include bsBanner("");
+
+// scss-docs-start import-stack
+// Configuration
+@import "bootstrap/5.2.4/functions";
+@import "bootstrap/5.2.4/variables";
+
+// Import NTGov theme
+@import "ntgbase/variables.scss";
+
+// Define NTG colours
+$ntg-theme-colours: (
+  ntg-primary: $primary,
+  ntg-primary-mid: $primary-mid,
+  ntg-primary-light: $light-blue,
+  ntg-secondary: $secondary,
+  ntg-ochre: $ntg-ochre,
+  ntg-ochre-mid: $ntg-ochre-mid,
+  ntg-charcoal-grey: $ntg-charcoal-grey,
+  ntg-arafura-blue: $ntg-arafura-blue,
+  ntg-arafura-blue-mid: $ntg-arafura-blue-variant,
+  ntg-sky-blue: $ntg-sky-blue,
+  ntg-teal-blue: $ntg-teal-blue,
+  ntg-bottle-green: $ntg-bottle-green,
+  ntg-coral: $ntg-hot-coral,
+  ntg-rubine-red: $ntg-rubine-red,
+  ntg-deep-mauve: $ntg-deep-mauve,
+  ntg-light: $ntg-light,
+  ntg-white: $ntg-color-white,
+  ntg-black: $ntg-color-black,
+  ntg-dark: $ntg-color-dark,
+  ntg-brown: $ntg-brown,
+  ntg-grey-900: $ntg-charcoal-grey,
+  ntg-grey-700: $ntg-grey-600,
+  ntg-grey-500: $ntg-grey-500,
+  ntg-grey-400: $ntg-grey-400,
+  ntg-grey-100: $ntg-grey-200,
+  ntg-color-header-bg: $ntg-color-header-background,
+  ntg-color-header-background-neutral: $ntg-color-header-background-neutral,
+  ntg-background-alt: $ntg-background-alt,
+  ntg-background-light: $ntg-background-light,
+);
+
+// Merge NTG colours with BS defaults
+
+$theme-colors: map-merge($ntg-theme-colours, $theme-colors);
+
+///////////////////////////////////////////////////
+
+// Bootstrap version 5.2.4 //
+
+///////////////////////////////////////////////////
+
+@import "bootstrap/5.2.4/maps";
+@import "bootstrap/5.2.4/mixins";
+@import "bootstrap/5.2.4/utilities";
+
+///////////////////////////////////////////////////
+
+// NTG Base version 5 //
+
+///////////////////////////////////////////////////
+
+// Import NTGov Components
+
+// Configuration
+@import "ntgbase/rem.scss";
+@import "ntgbase/svgs.scss";
+
+// Components
+@import "ntgbase/components/ntgovau-alerts.scss";
+@import "ntgbase/components/ntgovau-callout.scss";
+@import "ntgbase/components/ntgovau-nav-block.scss";
+@import "ntgbase/components/ntgovau-video.scss";
+@import "ntgbase/components/ntgovau-accordion.scss";
+@import "ntgbase/components/ntgovau-minicards.scss";
+
+// Layout Partials
+@import "ntgbase/partials/mixins.scss";
+@import "ntgbase/partials/ntgovau-buttons.scss";

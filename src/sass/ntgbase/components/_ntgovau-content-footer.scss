@@ -1,0 +1,40 @@
+.ntg-content-footer {
+    img {
+        @include media-breakpoint-down(lg) {
+            max-width: 250px !important;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+
+        h2 {
+            color: inherit;
+            margin-top: 0;
+        }
+
+        a {
+            align-self: flex-start;
+        }
+
+        > * {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+
+    &--orange {
+        background-color: $ntg-orange-light;
+        color: $ntg-grey-dark;
+    }
+
+    &--blue {
+        background-color: $ntg-sky-blue;
+        color: $ntg-color-white;
+    }
+}

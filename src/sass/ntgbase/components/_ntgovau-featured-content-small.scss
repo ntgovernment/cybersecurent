@@ -1,0 +1,122 @@
+/*
+-----------------------------
+Featured content - small
+-----------------------------
+*/
+.card {
+  --bs-card-border-radius: 16px;
+  overflow: hidden
+}
+
+.card-body {
+  @extend .p-4;
+}
+
+.card-body a.card-link {
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.wysiwyg_asset_id > * {
+  margin-top: 0px;
+}
+
+.ntg-featured-content-small__image {
+  min-height: 200px;
+  overflow: hidden;
+  background: url(https://nt.gov.au/__data/assets/image/0014/161330/ntg-placeholder.png)
+    no-repeat center / cover;
+}
+
+.ntg-featured-content-small__caption * {
+  margin-bottom: 0px;
+}
+
+.ntg-featured-content-small--background-gray {
+  @extend .bg-ntg-background-alt;
+}
+
+.ntg-featured-content-small__buttons a {
+  @extend .ntg-my-16;
+}
+
+.ntg-featured-content-small__text {
+  .btn.ntg-btn {
+    border-radius: 0 !important;
+  }
+
+  .btn.ntg-btn--secondary:hover {
+    @extend .ntg-btn--primary;
+    box-shadow: none !important;
+  }
+}
+
+.ntg-featured-content-small--image-left {
+  .ntg-featured-content-small__text {
+    @extend .order-last;
+  }
+
+  .ntg-featured-content-small__caption {
+    @extend .order-first;
+  }
+
+  .ntg-featured-content-small__caption-mobile {
+    @extend .order-1;
+    & * {
+      margin-bottom: 0px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .ntg-featured-content-small__caption p {
+      text-align: left !important;
+    }
+  }
+}
+
+.ntg-featured-content-small--noborder {
+  .card {
+    border: none;
+    background-color: transparent;
+  }
+
+  @media (max-width: 767px) {
+    .card-body {
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+    }
+
+    &.ntg-featured-content-small--image-right {
+      .card-body {
+        padding-top: 0px !important;
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .card-body {
+      padding-top: 0px !important;
+    }
+
+    &.ntg-featured-content-small--image-right {
+      .card-body {
+        padding-top: 0px !important;
+        padding-left: 0px !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .ntg-featured-content-small__buttons > .ntg-btn--secondary {
+    display: table-cell !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .ntg-featured-content-small--image-right
+    .ntg-featured-content-small__caption
+    p {
+    text-align: right !important;
+  }
+}

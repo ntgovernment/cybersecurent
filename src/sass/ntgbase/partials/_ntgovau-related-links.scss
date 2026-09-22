@@ -1,0 +1,28 @@
+/*
+-----------------------------
+  Related links
+-----------------------------  
+*/
+.related-links .heading {
+  background: $light-400;
+  padding: 25px 30px;
+  font-size: 24px;
+  border-radius: 5px 5px 0 0;
+}
+.related-links .links {
+  padding: 20px 30px;
+  background-color: $light-400;
+}
+.related-links .links ul {
+  padding: 0;
+}
+.related-links .links li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+.related-links .links li::before {
+  content: none;
+}
+.related-links .related-toggle {
+  color: $ntg-color-black;
+}

@@ -1,0 +1,62 @@
+.ntg-featured-section {
+  display: flex;
+
+  @include media-breakpoint-down(lg) {
+    flex-direction: column;
+  }
+
+  &__image {
+    flex-basis: 40%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 200px;
+    overflow: hidden;
+
+    @include media-breakpoint-up(lg) {
+      border-bottom-right-radius: 150px;
+    }
+
+    @include media-breakpoint-down(lg) {
+      max-height: 200px;
+    }
+  }
+
+  &__content {
+    flex-basis: 60%;
+    padding: 3rem 6rem;
+
+    @include media-breakpoint-down(lg) {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      padding-left: calc($container-padding-x / 2);
+      padding-right: calc($container-padding-x / 2);
+    }
+
+    h2 {
+      color: inherit;
+      margin-top: 0;
+    }
+
+    > * {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &--background-blue {
+    background-color: $ntg-sky-blue;
+    color: $ntg-color-white;
+  }
+
+  &--background-gray {
+    background-color: $ntg-charcoal-grey;
+    color: $white;
+  }
+
+  &--background-orange {
+    background-color: $ntg-orange-light;
+    color: $ntg-grey-dark;
+  }
+}

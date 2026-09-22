@@ -1,0 +1,80 @@
+$step-item-gap: 1.5rem;
+$step-item-gap-neg: -1.5rem;
+
+.ntg-step-list {
+  list-style: none;
+  counter-reset: step-list-counter;
+  position: relative;
+  padding-right: 1rem;
+
+  //Squiz specific rules for H3's
+  > h3,
+  > h3 ~ * {
+    opacity: 1;
+  }
+
+  .step-item {
+    &:nth-of-type(1) {
+      margin-top: pxToRem(52px);
+    }
+
+    //Squiz specific rules for H3's
+    //Squiz specific implementation
+    > h3,
+    > h3 ~ * {
+      opacity: 1;
+    }
+
+    & > h3 {
+      padding-top: 0;
+      margin-top: 0;
+      color: $body-color;
+      font-size: pxToRem(18px);
+      margin-bottom: 1rem;
+    }
+
+    position: relative;
+    padding-left: pxToRem(102px);
+    margin-bottom: $step-item-gap;
+
+    //Line
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      bottom: $step-item-gap-neg;
+      left: 1.5rem;
+      width: 2px;
+      // background: $secondary-mid;
+      --bs-border-width: 2px;
+      @extend .border-start;
+    }
+
+    //Counter
+    &::after {
+      width: pxToRem(48px);
+      height: pxToRem(48px);
+      line-height: pxToRem(48px);
+      text-align: center;
+      border-radius: 50%;
+      background: $primary;
+      counter-increment: step-list-counter;
+      content: counter(step-list-counter);
+      color: $ntg-color-white;
+      font-size: pxToRem(16px);
+      font-weight: $ntg-font-65-medium;
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin-top: -0.7em;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:last-child::before {
+      bottom: 100%;
+    }
+  }
+}

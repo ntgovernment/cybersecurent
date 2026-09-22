@@ -1,0 +1,109 @@
+/*
+-----------------------------
+    Tables
+-----------------------------    
+*/
+@media (max-width: 768px) {
+  main table.small-only {
+    display: block;
+  }
+
+  main table.large-only {
+    display: none;
+  }
+}
+
+// Remove all hard coded table borders
+.ntg-body .table {
+  border: none !important;
+
+  th {
+    background-color: $ntg-grey-medium-alt;
+    color: $ntg-grey-dark !important;
+  }
+
+  td,
+  th {
+    border-bottom: 1px solid $light-400;
+    padding: pxToRem(12px);
+  }
+}
+
+/*
+-----------------------------
+  Inline tables
+-----------------------------  
+*/
+.inline-table {
+  float: left;
+  margin-right: 10px;
+}
+
+.inline-table:last-child {
+  clear: both;
+}
+
+/* Mobile tables */
+table th.st-head-row {
+  background-color: transparent;
+  color: $ntg-color-dark;
+}
+
+th.st-head-row.st-head-row-main {
+  background-color: $grey-dark-100;
+  color: $ntg-color-white;
+}
+
+td.st-key {
+  font-weight: bold;
+}
+
+/*
+-----------------------------
+  Table sorting
+-----------------------------  
+*/
+table.large-only.sortable th {
+  cursor: pointer;
+}
+
+table.large-only.sortable th::after {
+  content: url("https://nt.gov.au/__data/assets/image/0020/388001/ascending.png");
+  opacity: 0.4;
+  float: right;
+}
+
+table.large-only.sortable th.sorttable_sorted::after {
+  content: url("https://nt.gov.au/__data/assets/image/0020/388001/ascending.png");
+}
+
+table.large-only.sortable th.sorttable_sorted_reverse::after {
+  content: url("https://nt.gov.au/__data/assets/image/0003/388002/descending.png");
+}
+
+table.large-only.sortable th.active::after {
+  opacity: 1;
+}
+
+table.large-only.sortable th.inactive::after {
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 768px) {
+  table.small-only.sortable th.st-head-row a {
+    color: $ntg-color-white !important;
+  }
+}
+
+/* Override BS5 Table overflow-x*/
+.table-responsive {
+  overflow-x: auto;
+}
+
+.table-responsive input[type="search"] {
+  margin-bottom: 0.5rem;
+}
+
+.dataTables_wrapper .dataTables_filter input {
+  margin-bottom: 0.5rem;
+}

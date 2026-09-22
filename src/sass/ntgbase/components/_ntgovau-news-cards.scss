@@ -1,0 +1,22 @@
+/*
+-----------------------------
+News cards
+-----------------------------
+*/
+
+.homepage-news {
+  margin-bottom: -30px !important;
+
+  .card-img-top {
+    max-height: 240px;
+  }
+
+  a.no-external-icon::after,
+  a.external::after {
+    content: none !important;
+  }
+
+  .ntg-btn:hover {
+    background: $secondary;
+  }
+}

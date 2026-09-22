@@ -1,0 +1,30 @@
+/*
+-----------------------------
+Figures, images,thumbnails
+-----------------------------
+*/
+main figure {
+  display: table;
+  /*width: 1px;*/
+}
+
+main figure img {
+  width: auto;
+  max-width: 100%;
+  display: table-cell;
+  vertical-align: bottom;
+}
+
+main figure figcaption {
+  padding: 15px 0;
+  margin-bottom: 20px;
+  color: $ntg-ochre-mid;
+  font-size: 13px;
+  font-style: normal;
+  border-bottom: 1px solid $ntg-sky-blue;
+  // border-bottom: 1px solid $ntg-ochre-mid;
+
+  &.figure-caption {
+    color: $ntg-color-dark;
+  }
+}

@@ -1,0 +1,119 @@
+/*
+-----------------------------
+  Filter pattern
+-----------------------------  
+*/
+
+// --- Spinner ---
+.ntg-spinner {
+  background: white;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 5000;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+  margin-top: 10rem;
+}
+
+// --- View option icons ---
+#view-options {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  float: right;
+}
+.ntg-view-option-icon {
+  color: #acb0b4;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-top: 25px;
+}
+.ntg-active {
+  color: #1f1f5f !important;
+}
+
+// --- Grid view background ---
+.grid-view .d-lg-flex {
+  background-color: white;
+  margin-bottom: 3rem;
+}
+
+// --- NTG pill ---
+.ntg-pill {
+  display: inline-block;
+
+  &--filter__label::after {
+    font-family: $font-icons;
+    content: "\f00d";
+    font-size: 0.625rem;
+    padding: 0 0 0 0.25rem;
+    margin-left: 0.25rem;
+  }
+  &__checkbox {
+    position: absolute;
+    opacity: 0;
+    left: -9999px;
+    &:focus + .ntg-pill--filter__label {
+      border-color: #86b7fe;
+      outline: 0;
+      box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+      border-radius: 50rem !important;
+    }
+  }
+}
+
+// --- NTG tag ---
+.ntg-tag {
+  display: none;
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  line-height: 1.5;
+  // background: #dcf0dc;
+  // color: #208820;
+  border-color: #1f1f5f !important;
+}
+
+// --- Pagination ---
+.ntg-pagination--filer-pattern {
+  li a {
+    border: 1px solid #efece6 !important;
+    padding: 15px !important;
+  }
+  span li a {
+    padding: 15px 20px !important;
+    border-radius: 0 !important;
+    &.page-link--current {
+      background-color: $primary;
+      border-color: $primary;
+      color: white;
+    }
+  }
+  &__btn--left::before {
+    font-family: $font-icons;
+    content: "\f177";
+    border-color: $primary;
+  }
+  &__btn--right::after {
+    font-family: $font-icons;
+    content: "\f178";
+    border-color: $primary;
+  }
+}
+
+.page-link.disabled {
+  background-color: $grey-400;
+}
+
+// --- Sort ---
+.sort-icon {
+  cursor: pointer;
+  &:after {
+    font-family: "Font Awesome 6 Pro";
+    content: "\f0dc";
+    font-weight: 900;
+    display: inline-block;
+    margin-left: 5px;
+  }
+}

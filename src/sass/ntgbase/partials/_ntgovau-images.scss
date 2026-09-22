@@ -1,0 +1,139 @@
+/*
+-----------------------------
+  Images
+-----------------------------  
+*/
+#content img {
+  max-width: 100%;
+}
+#content .imagefull {
+  padding: 5px;
+  border: solid 1px $ntg-grey-light;
+  border: solid 1px $ntg-grey-medium;
+  -moz-box-shadow: 1px 1px 5px $ntg-grey-strong;
+  -webkit-box-shadow: 1px 1px 5px $ntg-grey-strong;
+  box-shadow: 1px 1px 5px $ntg-grey-strong;
+  max-width: 95%;
+  clear: both;
+}
+#content .imagehalf {
+  padding: 5px;
+  border: solid 1px $ntg-grey-light;
+  border: solid 1px $ntg-grey-medium;
+  -moz-box-shadow: 1px 1px 5px $ntg-grey-strong;
+  -webkit-box-shadow: 1px 1px 5px $ntg-grey-strong;
+  box-shadow: 1px 1px 5px $ntg-grey-strong;
+  max-width: 46%;
+  margin-left: 5px;
+}
+#content .imagethird {
+  padding: 5px;
+  border: solid 1px $ntg-grey-light;
+  border: solid 1px $ntg-grey-medium;
+  -moz-box-shadow: 1px 1px 5px $ntg-grey-strong;
+  -webkit-box-shadow: 1px 1px 5px $ntg-grey-strong;
+  box-shadow: 1px 1px 5px $ntg-grey-strong;
+  max-width: 30%;
+  margin-left: 5px;
+}
+#content .imagequarter {
+  padding: 5px;
+  border: solid 1px $ntg-grey-light;
+  border: solid 1px $ntg-grey-medium;
+  -moz-box-shadow: 1px 1px 5px $ntg-grey-strong;
+  -webkit-box-shadow: 1px 1px 5px $ntg-grey-strong;
+  box-shadow: 1px 1px 5px $ntg-grey-strong;
+  max-width: 22%;
+  margin-left: 5px;
+}
+#content .imagefull,
+#content .imagehalf,
+#content .imagethird,
+#content .imagequarter {
+  height: auto;
+}
+
+/*
+-----------------------------
+Image - responsive clasees applies and resizes to %
+-----------------------------
+*/
+.imagedropshadow {
+  padding: 5px;
+  border: solid 1px $ntg-grey-light;
+  border: solid 1px $ntg-grey-medium;
+  -moz-box-shadow: 1px 1px 5px $ntg-grey-strong;
+  -webkit-box-shadow: 1px 1px 5px $ntg-grey-strong;
+  box-shadow: 1px 1px 5px $ntg-grey-strong;
+  max-width: 50%;
+}
+
+.imagefull {
+  padding: 5px;
+  border: solid 1px $ntg-grey-light;
+  border: solid 1px $ntg-grey-medium;
+  -moz-box-shadow: 1px 1px 5px $ntg-grey-strong;
+  -webkit-box-shadow: 1px 1px 5px $ntg-grey-strong;
+  box-shadow: 1px 1px 5px $ntg-grey-strong;
+  max-width: 95%;
+  clear: both;
+}
+
+.imagehalf {
+  padding: 5px;
+  border: solid 1px $ntg-grey-light;
+  border: solid 1px $ntg-grey-medium;
+  -moz-box-shadow: 1px 1px 5px $ntg-grey-strong;
+  -webkit-box-shadow: 1px 1px 5px $ntg-grey-strong;
+  box-shadow: 1px 1px 5px $ntg-grey-strong;
+  max-width: 46%;
+  margin-left: 5px;
+}
+
+.imagethird {
+  padding: 5px;
+  border: solid 1px $ntg-grey-light;
+  border: solid 1px $ntg-grey-medium;
+  -moz-box-shadow: 1px 1px 5px $ntg-grey-strong;
+  -webkit-box-shadow: 1px 1px 5px $ntg-grey-strong;
+  box-shadow: 1px 1px 5px $ntg-grey-strong;
+  max-width: 30%;
+  margin-left: 5px;
+}
+
+.imagequarter {
+  padding: 5px;
+  border: solid 1px $ntg-grey-light;
+  border: solid 1px $ntg-grey-medium;
+  -moz-box-shadow: 1px 1px 5px $ntg-grey-strong;
+  -webkit-box-shadow: 1px 1px 5px $ntg-grey-strong;
+  box-shadow: 1px 1px 5px $ntg-grey-strong;
+  max-width: 22%;
+  margin-left: 5px;
+}
+
+.imagefull,
+.imagehalf,
+.imagethird,
+.imagequarter {
+  height: auto;
+}
+
+/*
+-----------------------------
+Fix image height for IE
+-----------------------------
+*/
+.image-height-ie {
+  min-height: 10px;
+  flex-shrink: 0;
+}
+
+.image-border {
+  border: 1px solid $light-400;
+  padding: 4px;
+}
+
+.image-rounded {
+  border-radius: 16px;
+}

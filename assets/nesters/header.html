@@ -1,0 +1,179 @@
+<!-- <div class="ntg-banner-alert ntg-banner-alert--danger">
+          <div class="container-xl">
+            <div class="ntg-banner-alert__wrapper">
+              <div class="ntg-banner-alert__icon"></div>
+              <div class="ntg-banner-alert__content">
+                <h2>Cyber Security Alert</h2>
+                <p>
+                  <strong>Suspicious activity detected</strong>&mdash;your
+                  account may be at risk. Update your password immediately and
+                  enable
+                  <a href="#">two-factor authentication.</a>
+                  <br />
+                  <strong>Stay vigilant and never</strong> share your login
+                  details with anyone. Suspicious activity detected&mdash;<a
+                    href="#"
+                    >your account may be at risk.</a
+                  >
+                  <br />
+                  <strong>Do not share your</strong> login details or click on
+                  unknown links. If you didn't make recent changes,
+                  <a href="#">contact support immediately.</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ntg-banner-alert ntg-banner-alert--warning">
+          <div class="container-xl">
+            <div class="ntg-banner-alert__wrapper">
+              <div class="ntg-banner-alert__icon"></div>
+              <div class="ntg-banner-alert__content">
+                <h2>Cyber Security Alert</h2>
+                <p>
+                  <strong>Suspicious activity detected</strong>&mdash;your
+                  account may be at risk. Update your password immediately and
+                  enable
+                  <a href="#">two-factor authentication.</a>
+                  <br />
+                  <strong>Stay vigilant and never</strong> share your login
+                  details with anyone. Suspicious activity detected&mdash;<a
+                    href="#"
+                    >your account may be at risk.</a
+                  >
+                  <br />
+                  <strong>Do not share your</strong> login details or click on
+                  unknown links. If you didn't make recent changes,
+                  <a href="#">contact support immediately.</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+<div class="ntg-banner-alert ntg-banner-alert--info">
+  <div class="container-xl">
+    <div class="ntg-banner-alert__wrapper">
+      <div class="ntg-banner-alert__icon"></div>
+      <div class="ntg-banner-alert__content">
+        <h2>Cyber Security Alert</h2>
+        <p>
+          <strong>Suspicious activity detected</strong>&mdash;your
+          account may be at risk. Update your password immediately and
+          enable
+          <a href="#">two-factor authentication.</a>
+          <br />
+          <strong>Stay vigilant and never</strong> share your login
+          details with anyone. Suspicious activity detected&mdash;<a href="#">your account may be at risk.</a>
+          <br />
+          <strong>Do not share your</strong> login details or click on
+          unknown links. If you didn't make recent changes,
+          <a href="#">contact support immediately.</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<header class="ntg-header">
+  <div class="ntg-header__top">
+    <div class="container-xl">
+      <div class="ntg-header__top-wrapper">
+        <div class="ntg-header__logos">
+          <a class="ntg-header__logo" href="#">
+            <img class="ntg-header__image" src="https://nt.gov.au/__data/assets/file/0007/1443625/logo-ntg-mono.svg"
+              alt="Territory Coordinator Logo" width="187" height="55" />
+          </a>
+          <a class="ntg-header__title" href="#">
+            <span>Cyber NTG</span>
+          </a>
+        </div>
+        <nav class="ntg-header__links">
+          <ul>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#" class="report-incident-btn">Report incident</a></li>
+          </ul>
+        </nav>
+        <div class="ntg-header__utility">
+          <form class="ntg-header__search-desktop">
+            <div class="input-group">
+              <input class="form-control" type="text" name="query" autocomplete="off" placeholder="Search"
+                aria-label="Search" />
+              <button type="submit">
+                <span class="visually-hidden">Search</span>
+                <i class="fa-solid fa-search" aria-hidden="true"></i>
+              </button>
+            </div>
+          </form>
+          <button class="ntg-header__search-mobile">
+            <span class="visually-hidden">Search</span>
+            <i class="fa-solid fa-search" aria-hidden="true"></i>
+          </button>
+          <div class="ntg-header__mobile">
+            <a href="#mmenu-wrapper" aria-label="Open or close menu">
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ntg-header__bottom">
+    <div class="container-xl">
+      <nav class="ntg-main-nav" id="mainmenu">
+        <div class="ntg-main-nav__wrapper">
+          <ul class="ntg-main-nav__links sf-menu">
+            <li class="active">
+              <a href="/index.html">Home</a>
+            </li>
+            <li>
+              <a href="/assets/pages/content.html">Content</a>
+            </li>
+            <li>
+              <a href="#">Form</a>
+            </li>
+            <li class="has-children">
+              <a href="#">News</a>
+              <ul>
+                <li>
+                  <a href="#">News item</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="/assets/pages/components.html">Components</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<script>
+  $(document).ready(function () {
+    // Initialise sticky header plugin
+    function initStickyHeader() {
+      const header = document.querySelector(".page-header-container");
+      var stickyHeader = new StickyHeader(header);
+      stickyHeader.init();
+    }
+
+    // Initialise Superfish plugin
+    function initSuperfish() {
+      $("ul.sf-menu").superfish({
+        // options
+        delay: 250,
+        speed: 250,
+        speedOut: 250,
+        cssArrows: false,
+      });
+    }
+
+    initStickyHeader(); //call initStickyHeader function
+    initSuperfish(); //call initSuperfish function
+  });
+</script>

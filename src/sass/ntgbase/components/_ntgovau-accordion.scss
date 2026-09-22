@@ -1,0 +1,147 @@
+// /*
+// -----------------------------
+// Accordion
+// -----------------------------
+// */
+
+// .ntg-accordion-toggler {
+//   max-width: $ntg-maxwidth;
+// }
+
+// .ntg-accordion {
+//   max-width: $ntg-maxwidth;
+
+//   .accordion-button,
+//   .accordion-button:not(.collapsed) {
+//     color: $ntg-accordion-button-color;
+//   }
+
+//   .accordion-item {
+//     color: $ntg-color-dark;
+
+//     &:not(:last-child) {
+//       margin-bottom: 1rem;
+//     }
+//   }
+
+//   .accordion-button {
+//     font-size: pxToRem(22px);
+//     font-weight: 700;
+//     padding-left: 0;
+//     padding-right: 0;
+
+//     &:focus {
+//       border-color: transparent;
+//       box-shadow: none;
+//     }
+//   }
+
+//   .accordion-button:not(.collapsed) {
+//     background-color: transparent;
+//     font-weight: 700;
+
+//     // test
+//     // @include media-breakpoint-up(xl) {
+//     //   color: red;
+//     //   background: blue;
+//     // }
+//   }
+
+//   .accordion-button::after {
+//     background-image: $ntg-accordion-btn-icon;
+//   }
+// }
+
+// div:has(.ntg-accordion) + div > p:first-child {
+//   margin-top: 1.5rem !important;
+// }
+
+.ntg-accordion {
+  &__heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 40px 0 16px;
+
+    h2 {
+      margin: 0;
+    }
+  }
+
+  &__controls {
+    margin-left: auto;
+
+    a {
+      color: $body-color;
+      text-decoration: none;
+      padding: 0.75rem 1rem;
+      border: 1px solid $primary;
+      border-radius: 6px;
+      transition: 0.15s background-color ease-in-out, 0.15s color ease-in-out;
+
+      &:hover {
+        padding-bottom: 0.75rem;
+        border: 1px solid $primary;
+      }
+
+      &:first-child {
+        margin-right: 0.5rem;
+        background-color: $primary;
+        color: $white;
+
+        &:hover {
+          background-color: tint-color($primary, 10%);
+          color: $white;
+        }
+      }
+
+      &:last-child {
+        &:hover {
+          background-color: $primary;
+          color: $white;
+        }
+      }
+    }
+  }
+
+  .accordion {
+    &-item {
+      border-left: none;
+      border-right: none;
+
+      &:first-child {
+        border-top: none;
+      }
+    }
+
+    &-header {
+      margin-top: 0;
+
+      &:target {
+        display: inherit;
+      }
+    }
+
+    &-button {
+      font-weight: 700;
+
+      &:not(.collapsed) {
+        box-shadow: none;
+      }
+
+      &:hover {
+        color: $primary;
+      }
+    }
+
+    &-body {
+      > * {
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

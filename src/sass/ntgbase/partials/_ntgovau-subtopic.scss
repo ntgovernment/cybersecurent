@@ -1,0 +1,40 @@
+/*
+-----------------------------
+  Subtopic
+-----------------------------  
+*/
+.subtopic-list {
+  padding: 0;
+}
+.subtopic-list li {
+  margin-bottom: 30px;
+}
+.subtopic-list li::before {
+  content: none;
+}
+.subtopic-list li a {
+  border-bottom: 3px dotted $light-400;
+  color: $primary;
+  /*border-bottom: 3px dotted #7faed2;
+  color: #1c4774;*/
+  font-weight: bold;
+  font-size: 22px;
+  padding-bottom: 10px;
+  font-weight: normal;
+}
+.subtopic-list li a:hover {
+  border-bottom: 3px dotted $secondary-mid;
+  color: $secondary-mid;
+}
+
+@media (max-width: 576px) {
+  .subtopic-list li a {
+    display: inline-block;
+  }
+}
+.subtopic-children {
+  padding-left: 0;
+}
+.subtopic-children li::before {
+  content: none;
+}

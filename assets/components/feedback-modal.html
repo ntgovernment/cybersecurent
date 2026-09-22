@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <title>Component: Accordion | NT.GOV.AU</title>
+
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+
+  <meta charset="utf-8" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+  <meta name="description" content="" />
+  <meta name="robots" content="" />
+  <meta name="dcterms.title" content="" />
+  <meta name="dcterms.creator" content="Northern Territory Government" />
+  <meta name="dcterms.created" content="2023-01-25T09:51:33+09:30" />
+  <meta name="dcterms.issued" content="1970-01-01T09:30:00+09:30" />
+  <meta name="dcterms.modified" content="2023-01-25T13:50:20+09:30" />
+  <meta name="dcterms.identifier" content="https://nt.gov.au/_development/test-bs-5.3.0/content-boilerplate" />
+  <meta name="dcterms.subject" content="NT.GOV.AU" />
+  <meta name="dc.language" content="en" />
+
+  <meta property="og:title" content="Component: Accordion" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://nt.gov.au/_development/test-bs-5.3.0/content-boilerplate" />
+  <meta property="og:image" content="https://nt.gov.au/__data/assets/image/0010/807598/facebook-share-parks.png" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="NT.GOV.AU" />
+  <meta property="article:published_time" content="1970-01-01T09:30:00+09:30" />
+  <meta property="article:modified_time" content="2023-01-25T13:50:20+09:30" />
+  <meta property="article:tag" content="" />
+
+  <script type="text/javascript">
+    var $html = document.documentElement;
+    if ($html.classList)
+      $html.classList.remove("no-js"), $html.classList.add("js");
+    else {
+      var className = "no-js";
+      ($html.className = $html.className.replace(
+        new RegExp(
+          "(^|\\b)" + className.split(" ").join("|") + "(\\b|$)",
+          "gi"
+        ),
+        " "
+      )),
+        ($html.className += " js");
+    }
+  </script>
+
+  <link type="text/css" rel="stylesheet" href="../../dist/globals/css/fontawesome.min.css" />
+
+  <link rel="apple-touch-icon" sizes="180x180"
+    href="https://nt.gov.au/__data/assets/image/0008/1185686/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32"
+    href="https://nt.gov.au/__data/assets/image/0009/1185687/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16"
+    href="https://nt.gov.au/__data/assets/image/0010/1185688/favicon-16x16.png" />
+
+  <!--<link href="https://nt.gov.au/_design/css/lightbox2.css" rel="stylesheet" type="text/css">-->
+
+  <link type="text/css" rel="stylesheet" href="../../dist/ntgbase/ntgbase.min.css" />
+</head>
+
+<body>
+  <div id="top"></div>
+
+  <div id="content_container_1185661">
+    <div class="skip-links">
+      <ul>
+        <li><a href="#content">Skip to content</a></li>
+        <li><a href="#footer">Skip to footer</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container d-none d-print-block">
+    <img src="https://nt.gov.au/__data/assets/file/0019/1111915/ntg-mono.webp" alt="ntg-mono" />
+  </div>
+
+  <header class="ntg-header d-print-none" id="header"></header>
+
+  <div id="content_container_1185643">
+    <div class="mobile-banner banner-search d-lg-none d-print-none">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 py-4">
+            <form class="form-inline search d-print-none" action="https://nt.gov.au/search">
+              <div class="input-group p-0">
+                <input class="form-control" type="text" placeholder="Search" name="query" aria-label="Search"
+                  autocomplete="off" />
+                <div class="input-group-append">
+                  <button class="btn" type="submit" aria-label="Apply search">
+                    <span class="text-hide">Search</span>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="content" class="ntg-body">
+    <!-- breadcrumbs -->
+
+    <div class="breadcrumb-container pt-2">
+      <div class="container-xl d-print-none ntg-breadcrumbs breadcrumb-section">
+        <nav aria-label="breadcrumb" role="navigation" class="mt-3">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="#">Home</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="#">_development</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="#">Test BS 5.3.0</a>
+            </li>
+            <li class="breadcrumb-item active">Boilerplate</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+    <main id="content" class="ntg-body">
+      <div class="container-xl py-5">
+        <div class="row">
+          <div class="col-md-8 my-0 my-md-4 content__main">
+            <!-- main content -->
+            <!-- Trigger Button -->
+            <!-- <div class="container my-5 text-center">
+              <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#feedbackModal">
+                Was this page helpful?
+              </button>
+            </div> -->
+
+            <div id="feedbackPopup" class="ntg-feedback-section visually-hidden">
+              <div id="feedbackHeader" class="ntg-feedback-section__header">
+                <span class="title">Was this page helpful?</span><span id="toggleIcon"><i
+                    class="fa-solid fa-chevron-up"></i></span>
+              </div>
+
+              <div id="feedbackBody" class="ntg-feedback-section__body">
+                <form id="customFeedbackForm">
+
+                  <!-- Step 1 -->
+                  <div class="step-1 mb-3">
+                    <div class="sq-form-question sq-form-question-option-list ">
+                      <div class="sq-form-question-answer">
+                        <ul>
+                          <li>
+                            <input class="form-check-input pageHelpRadio" type="radio" id="optionYes"
+                              name="q%globals_asset_assetid:1264189%:q1" value="0">
+                            <label class="form-check-label" for="optionYes">Yes</label>
+                          </li>
+                          <li>
+                            <input class="form-check-input pageHelpRadio" type="radio" id="optionSome"
+                              name="q%globals_asset_assetid:1264189%:q1" value="1">
+                            <label class="form-check-label" for="optionSome">Some of it</label>
+                          </li>
+                          <li>
+                            <input class="form-check-input pageHelpRadio" type="radio" id="optionNo"
+                              name="q%globals_asset_assetid:1264189%:q1" value="2">
+                            <label class="form-check-label" for="optionNo">No</label>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="pt-4 d-flex align-items-center">
+                        <button type="button" class="btn ntg-btn ntg-btn--tertiary px-sm-5 px-3 py-2"
+                          id="continueBtn">Continue</button>
+                        <a href="#" type="button" class="cancelButton ms-3">Cancel</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Step 2 -->
+                  <div class="step-2">
+                    <input type="hidden" id="feedbackType" name="feedbackType">
+                    <div class="mb-3">
+                      <!-- <label for="feedbackInput" class="form-label">How can we improve this page?</label> -->
+                      <textarea class="form-control" id="feedbackInput" rows="4"
+                        placeholder="Please provide details on why you didn't find this page useful" required
+                        name="q1264189:q2"></textarea>
+
+                      <div class="mt-4">
+                        <button type="submit"
+                          class="btn ntg-btn ntg-btn--tertiary me-3 px-sm-5 px-3 py-2">Submit</button>
+                        <a href="#" type="button" id="goBackBtn">Go back</a>
+                        <a href="#" type="button" class="cancelButton ms-3">Cancel</a>
+
+                        <!-- Hidden submit field -->
+                        <input type="hidden" name="form_email_1264189_submit" value="Submit">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="feedbackSpinner" class="modal-footer justify-content-center border-top-0 pt-0 pb-4"
+                    style="display:none">
+                    <div class="spinner-border text-primary ms-2" role="status">
+                      <span class="visually-hidden">Loading...</span>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+
+          </div>
+          <!-- //main content -->
+          <!-- Custom JS -->
+
+          <!-- //col -->
+        </div>
+        <!-- //row 1 -->
+
+        <div class="row">
+          <div class="col-12 mb-4 content__extra">
+            <!-- Social share -->
+            <!-- Give feedback -->
+            <!-- Print date -->
+            <div id="print-date" data-date=""></div>
+          </div>
+        </div>
+        <!-- //row 2 -->
+      </div>
+      <!-- // container -->
+    </main>
+  </div>
+
+  <footer id="footer" class="ntg-footer container-fluid pt-4 px-0" role="contentinfo"></footer>
+
+  <script type="text/javascript" src="../../dist/globals/js/jquery.min.js"></script>
+
+  <script>
+    (function ($) {
+      var $span = $('<span class="fa" style="display:none"></span>').appendTo(
+        "body"
+      );
+      if ($span.css("font-family") !== '"Font Awesome 5 Pro"') {
+        // Fallback Link
+        $("head").append('<link href="./?a=1053458" rel="stylesheet">');
+      }
+      $span.remove();
+    })(jQuery);
+
+    $(function () {
+      $("#skip-links").load("../../assets/nesters/skiplinks.html");
+      $("#header").load("../../assets/nesters/header.html");
+      $("#social-share").load("../../assets/nesters/socialshare.html");
+      $("#footer").load("../../assets/nesters/footer.html");
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="../../dist/globals/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    (function ($) {
+      var $span = $('<span class="fa" style="display:none"></span>').appendTo(
+        "body"
+      );
+      if ($span.css("font-family") !== '"Font Awesome 6 Pro"') {
+        // Fallback Link
+        $("head").append(
+          '<link href="/preflight/fontawesome.css" rel="stylesheet">'
+        );
+      }
+      $span.remove();
+    })(jQuery);
+  </script>
+
+  <script src="../../dist/ntgbase/ntgbase-components.min.js"></script>
+
+  <script src="../../dist/ntgbase/ntgbase-main.min.js"></script>
+
+  <script>
+    const feedbackPopup = document.getElementById('feedbackPopup');
+    const feedbackHeader = document.getElementById('feedbackHeader');
+    const feedbackHeaderTitle = feedbackHeader.querySelector('.title');
+    const feedbackBody = document.getElementById('feedbackBody');
+    const toggleIcon = document.getElementById('toggleIcon');
+    const step1 = document.querySelector('.step-1');
+    const step2 = document.querySelector('.step-2');
+    const feedbackInput = document.getElementById('feedbackInput');
+    const feedbackTypeInput = document.getElementById('feedbackType');
+    const continueBtn = document.getElementById('continueBtn');
+    const goBackBtn = document.getElementById('goBackBtn');
+    const cancelButton = document.querySelectorAll('.cancelButton');
+    const spinner = document.getElementById('feedbackSpinner');
+    const form = document.getElementById('customFeedbackForm');
+
+    let lastTitle = "Was this page helpful?";
+    let feedbackPopupOpenedOnce = false;
+    let feedbackSectionShown = false;
+
+    // Clean pathname by removing /_nocache or /_recache
+    const cleanPath = window.location.pathname.replace(/\/_(no|re)cache$/, '');
+    const pageKey = 'feedbackSubmitted_' + cleanPath;
+
+    function changeTitle(title) {
+      feedbackHeaderTitle.textContent = title;
+      lastTitle = title;
+    }
+
+    // Toggle feedback popup
+    feedbackHeader.addEventListener('click', () => {
+      if (localStorage.getItem(pageKey)) {
+        feedbackPopup.remove();
+      }
+
+      const isVisible = feedbackBody.classList.toggle("open");
+      feedbackHeader.classList.toggle("open");
+      feedbackHeaderTitle.textContent = isVisible ? lastTitle : "Was this page helpful?";
+      toggleIcon.innerHTML = isVisible
+        ? '<i class="fa-solid fa-chevron-down"></i>'
+        : '<i class="fa-solid fa-chevron-up"></i>';
+
+      feedbackSectionShown = isVisible;
+    });
+
+    // Auto show feedback section on scroll if not submitted
+    window.addEventListener('load', () => {
+      if (localStorage.getItem(pageKey)) {
+        feedbackPopup.remove();
+        return;
+      }
+      feedbackPopup.classList.remove("visually-hidden");
+
+      window.addEventListener('scroll', () => {
+        if (feedbackSectionShown || feedbackPopupOpenedOnce) return;
+
+        const footer = document.getElementById('footer');
+        const footerTop = footer.getBoundingClientRect().top;
+        const viewportHeight = window.innerHeight;
+
+        // Check if the top of the footer is at or below the bottom of the screen
+        if (footerTop <= viewportHeight) {
+          feedbackHeader.click();
+          feedbackSectionShown = true;
+          feedbackPopupOpenedOnce = true;
+        }
+      });
+    });
+
+    // Continue button logic
+    continueBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const selected = document.querySelector('input.pageHelpRadio:checked');
+
+      if (!selected) {
+        alert("Please select an option.");
+        return;
+      }
+
+      feedbackTypeInput.value = selected.value;
+
+      if (feedbackTypeInput.value === "0") {
+        form.dispatchEvent(new Event('submit', { bubbles: true, cancelable: true }));
+        return;
+      }
+
+      step1.style.display = 'none';
+      step2.style.display = 'block';
+      changeTitle("How can we improve this page?");
+    });
+
+    // Go back button logic
+    goBackBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      feedbackInput.value = '';
+      feedbackTypeInput.value = '';
+      step1.style.display = 'block';
+      step2.style.display = 'none';
+      changeTitle("Was this page helpful?");
+    });
+
+    cancelButton.forEach(button => {
+      button.addEventListener('click', (e) => {
+        e.preventDefault();
+        feedbackHeader.click();
+        feedbackInput.value = '';
+        feedbackTypeInput.value = '';
+        step1.style.display = 'block';
+        step2.style.display = 'none';
+
+        document.querySelectorAll('.pageHelpRadio').forEach(function (radio) {
+          if (radio.checked) {
+            radio.checked = false;
+          }
+        });
+
+      });
+    });
+
+    // Submit feedback form
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const formData = new FormData(form);
+
+      spinner.style.display = 'flex';
+
+      fetch('./?a=1264188', {
+        method: 'POST',
+        body: formData
+      })
+        .then(response => {
+          spinner.style.display = 'none';
+
+          if (response.ok) {
+            localStorage.setItem(pageKey, 'true');
+            document.querySelector('#feedbackBody').innerHTML = `
+              <div class="text-left py-4">
+                <h5 class="mb-3">Thank you!</h5>
+                <p>Your feedback helps us improve this page.</p>
+              </div>
+            `;
+            changeTitle("Feedback submitted.");
+          } else {
+            alert("Something went wrong.");
+          }
+        })
+        .catch(error => {
+          spinner.style.display = 'none';
+          console.error('Submission error:', error);
+          alert("There was a problem submitting your feedback.");
+        });
+    });
+  </script>
+
+
+</body>
+
+</html>

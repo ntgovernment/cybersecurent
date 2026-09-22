@@ -1,0 +1,221 @@
+/*
+-----------------------------
+  Footer
+-----------------------------  
+*/
+.ntg-footer {
+  background: $ntg-color-footer-background-dark;
+  position: relative;
+  bottom: 0;
+  overflow: hidden;
+  padding-bottom: 250px;
+
+  &::before {
+    content: '';
+    background-image: url("../../assets/images/binary-code.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    bottom: -300px;
+    width: 100%;
+    height: 500px;
+  }
+
+  > * {
+    position: relative;
+  }
+
+  &__links {
+    padding-bottom: 2rem;
+    h3 {
+      // border-bottom: 1px solid $ntg-grey-400;
+      padding-bottom: 5px;
+      color: $ntg-color-white;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      li {
+        margin-bottom: 8px;
+
+        &::before {
+          content: '\f054';
+          font-family: $font-icons;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          display: inline-block;
+          font-style: normal;
+          font-variant: normal;
+          font-weight: normal;
+          line-height: 1;
+          color: $ntg-color-white;
+          margin-right: 0.5rem;
+        }
+      }
+    }
+    a {
+      border: none;
+      text-decoration: none;
+      color: $ntg-color-white;
+
+      &:hover {
+        text-decoration: underline;
+        color: $ntg-color-white;
+      }
+    }
+
+    i[class*="fa-facebook"] {
+      color: $ntg-color-white;
+    }
+
+    i[class*="fa-linked"] {
+      color: $ntg-color-white;
+    }
+
+    i[class*="fa-youtube"] {
+      color: $ntg-color-white;
+    }
+
+    i[class*="fa-instagram"] {
+      color: $ntg-color-white;
+    }
+
+    li::marker {
+      color: $ntg-color-white;
+    }
+
+    &--topics {
+      ul {
+        column-count: 2;
+        column-gap: 35px;
+      }
+    }
+
+    &--social {
+      ul {
+        padding-left: 0 !important;
+        li {
+          list-style: none;
+          margin-bottom: 15px;
+          vertical-align: middle;
+          position: relative;
+          padding-left: 40px;
+
+          &::before {
+            content: none;
+          }
+        }
+        .fab,
+        .fal {
+          position: absolute;
+          left: 0;
+          top: -5px;
+        }
+      }
+    }
+
+    &--utility {
+      hr {
+        color: $ntg-color-white;
+      }
+      ul {
+        padding: 0;
+        padding-bottom: 0.5rem !important;
+        margin-top: 25px;
+
+        li {
+          list-style: none;
+          a {
+            text-decoration: none;
+            color: $ntg-color-white;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__logo {
+    display: inline-block;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding-bottom: 0;
+
+    &:hover {
+      text-decoration: none !important;
+      padding-bottom: 0;
+    }
+
+    img {
+      max-height: 48px;
+      width: 100%;
+    }
+  }
+
+  &__text {
+    color: $ntg-color-white;
+    font-size: $font-size-sm;
+  }
+
+  .feedback-container {
+    display: inline-block;
+
+    h3 {
+      color: $ntg-color-white;
+    }
+
+    .feedback-option {
+      cursor: pointer;
+      font-size: 2.5rem;
+      padding: 5px;
+      transition: color 0.3s;
+      color: $ntg-color-white;
+
+      .far {
+        transition: font-weight 0.2s ease-in-out;
+      }
+    }
+
+    .feedback-option:hover,
+    .feedback-option.selected {
+      .far {
+        font-weight: 700;
+      }
+    }
+
+    input[type="radio"] {
+      display: none;
+    }
+
+  }
+
+    #feedbackToastContainer {
+      position: fixed;
+      bottom: 20px;
+      right: 50%;
+      transform: translateX(50%);
+      z-index: 9999;
+    }
+}
+
+/* ---------- Mobile footer - topic links ---------- */
+@media (max-width: $media-sm) {
+  .ntg-footer__links--topics ul {
+    column-count: 1;
+    column-gap: 0;
+  }
+}
+
+/* ---------- Footer - logo ---------- */
+// .ntg-bp-logo {
+//   width: 360px;
+// }
+// @media (max-width: 411px) {
+//   .ntg-bp-logo {
+//     width: 280px;
+//   }
+// }

@@ -1,0 +1,526 @@
+/*!
+ * Bootstrap  v5.2.4 (https://getbootstrap.com/)
+ * Copyright 2011-2022 The Bootstrap Authors
+ * Copyright 2011-2022 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+/*
+-----------------------------
+  NTG Design System - Font & colour pack
+-----------------------------  
+*/
+/*
+-----------------------------
+Alerts
+-----------------------------
+*/
+.ntg-alert {
+  border: 0.07rem solid transparent;
+  border-left-width: 0.5rem !important;
+  border-radius: 0 !important;
+  /* Alert border and icons */
+  /* Alert spacing */
+}
+.ntg-alert__icon {
+  margin-top: -0.5rem;
+}
+.ntg-alert__icon:before {
+  font-family: "Font Awesome 6 Pro";
+  margin-right: 1.25rem;
+  font-size: 2rem;
+  font-weight: 390;
+}
+.ntg-alert--info {
+  border-color: #00bfe9 !important;
+}
+.ntg-alert--info .ntg-alert__icon:before {
+  content: "\f05a";
+  color: #00bfe9;
+}
+.ntg-alert--success {
+  border-color: #0cac78 !important;
+}
+.ntg-alert--success .ntg-alert__icon:before {
+  content: "\f058";
+  color: #0cac78;
+}
+.ntg-alert--warning {
+  border-color: #f69900 !important;
+}
+.ntg-alert--warning .ntg-alert__icon:before {
+  content: "\f071";
+  color: #f69900;
+}
+.ntg-alert--error {
+  border-color: #ff635c !important;
+}
+.ntg-alert--error .ntg-alert__icon:before {
+  content: "\f2ee";
+  color: #ff635c;
+}
+.ntg-alert--other {
+  border-color: #6c757d !important;
+}
+.ntg-alert--other .ntg-alert__icon:before {
+  content: "\f06a";
+  color: #6c757d;
+}
+.ntg-alert__text {
+  padding-right: 2rem !important;
+}
+.ntg-alert__text h2,
+.ntg-alert__text h3,
+.ntg-alert__text h4,
+.ntg-alert__text h5,
+.ntg-alert__text h6 {
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+.ntg-alert__text p:last-child {
+  margin-bottom: 0;
+}
+
+/*
+-----------------------------
+Callout
+-----------------------------
+*/
+/* Callout */
+.ntg-callout {
+  border: 1px solid #1f1f5f;
+  /* Callout icon */
+  /* Callout spacing */
+}
+.ntg-callout__content {
+  border-left: 0.5rem solid #1f1f5f;
+  border-radius: 0 !important;
+  background-color: transparent;
+}
+.ntg-callout__icon {
+  font-family: "Font Awesome 6 Pro";
+  color: #1f1f5f;
+  margin-right: 1.25rem;
+  margin-top: -0.5rem;
+  font-size: 1.5rem;
+}
+.ntg-callout__text {
+  padding-right: 2rem !important;
+  width: 100%;
+}
+.ntg-callout__text h2,
+.ntg-callout__text h3,
+.ntg-callout__text h4,
+.ntg-callout__text h5,
+.ntg-callout__text h6 {
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+.ntg-callout__text p:last-child {
+  margin-bottom: 0;
+}
+.ntg-callout__heading {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  color: #00235d;
+}
+.ntg-callout__heading h2,
+.ntg-callout__heading h3,
+.ntg-callout__heading h4,
+.ntg-callout__heading h5,
+.ntg-callout__heading h6 {
+  color: inherit;
+  margin-bottom: 0;
+}
+.ntg-callout__heading .ntg-callout__icon {
+  margin-top: 0;
+}
+.ntg-callout__heading:has(h2) .ntg-callout__icon {
+  font-size: calc(1.325rem + 0.9vw);
+}
+@media (min-width: 1200px) {
+  .ntg-callout__heading:has(h2) .ntg-callout__icon {
+    font-size: 2rem;
+  }
+}
+.ntg-callout__heading:has(h3) .ntg-callout__icon {
+  font-size: calc(1.275rem + 0.3vw);
+}
+@media (min-width: 1200px) {
+  .ntg-callout__heading:has(h3) .ntg-callout__icon {
+    font-size: 1.5rem;
+  }
+}
+.ntg-callout__heading:has(h4) .ntg-callout__icon {
+  font-size: 1.25rem;
+}
+.ntg-callout__heading:has(h5) .ntg-callout__icon {
+  font-size: 1rem;
+}
+.ntg-callout__heading:has(h6) .ntg-callout__icon {
+  font-size: 1rem;
+}
+.ntg-callout a {
+  text-decoration: none;
+  color: #180d0a;
+}
+.ntg-callout a .ntg-callout__content::after {
+  font-family: "Font Awesome 6 Pro";
+  color: #1f1f5f;
+  font-weight: 900;
+  content: "\f105";
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center !important;
+}
+.ntg-callout a:hover {
+  color: #180d0a;
+}
+.ntg-callout a:hover .ntg-callout__content::after {
+  color: #c33826;
+}
+.ntg-callout--primary-alt {
+  border-color: transparent;
+  background-color: #f6f6f6;
+}
+.ntg-callout--secondary {
+  border-color: #127cbf;
+}
+.ntg-callout--secondary .ntg-callout__content {
+  border-left-color: #127cbf;
+}
+.ntg-callout--secondary .ntg-callout__heading {
+  color: #212529;
+}
+.ntg-callout--secondary .ntg-callout__icon {
+  color: #127cbf;
+}
+.ntg-callout--gray {
+  border-color: #494949;
+}
+.ntg-callout--gray .ntg-callout__content {
+  border-left-color: #494949;
+}
+.ntg-callout--gray .ntg-callout__heading {
+  color: #212529;
+}
+.ntg-callout--gray .ntg-callout__icon {
+  color: #494949;
+}
+.ntg-callout--red {
+  border-color: #dc3545;
+}
+.ntg-callout--red .ntg-callout__content {
+  border-left-color: #dc3545;
+}
+.ntg-callout--red .ntg-callout__heading {
+  color: #212529;
+}
+.ntg-callout--red .ntg-callout__icon {
+  color: #dc3545;
+}
+.ntg-callout--red-alt {
+  border-color: transparent;
+  background-color: #f6f6f6;
+}
+.ntg-callout--red-alt .ntg-callout__content {
+  border-left-color: #dc3545;
+}
+.ntg-callout--red-alt .ntg-callout__heading {
+  color: #212529;
+}
+.ntg-callout--red-alt .ntg-callout__icon {
+  color: #dc3545;
+}
+.ntg-callout--secondary-alt {
+  border-color: transparent;
+  background-color: #f6f6f6;
+}
+.ntg-callout--secondary-alt .ntg-callout__content {
+  border-left-color: #127cbf;
+}
+.ntg-callout--secondary-alt .ntg-callout__heading {
+  color: #212529;
+}
+.ntg-callout--secondary-alt .ntg-callout__icon {
+  color: #127cbf;
+}
+
+.ntg-callout__text a {
+  color: #1f1f5f;
+  text-decoration: underline;
+}
+.ntg-callout__text a:hover {
+  color: #c33826;
+  text-decoration: none;
+}
+
+/*
+-----------------------------
+Nav block
+-----------------------------
+*/
+.ntg-nav-block__intro i.medium {
+  font-size: 1.5rem;
+}
+.ntg-nav-block__intro h2,
+.ntg-nav-block__intro i {
+  color: #1f1f5f;
+}
+.ntg-nav-block__intro h2.default-text,
+.ntg-nav-block__intro i.default-text {
+  color: #180d0a;
+}
+.ntg-nav-block__list ul {
+  padding-left: 1.375rem;
+  margin-bottom: 0;
+}
+.ntg-nav-block__list ul li.list-unstyled::before {
+  content: "";
+}
+@media (max-width: 575.98px) {
+  .ntg-nav-block__list ul li.list-unstyled a.ntg-btn {
+    margin-left: -1.5625rem;
+    margin-top: 1.5625rem;
+  }
+}
+.ntg-nav-block__list h3 {
+  color: #1f1f5f;
+}
+@media (min-width: 768px) {
+  .ntg-nav-block .border-left-light {
+    border-left: 1px solid #e9e8ef;
+    padding-left: 2rem;
+  }
+}
+.ntg-nav-block ul.link-with-description {
+  padding-left: 0;
+  margin-top: -1.375rem;
+}
+.ntg-nav-block ul.link-with-description li::before {
+  content: "";
+}
+.ntg-nav-block ul.link-with-description h3 {
+  color: #1f1f5f;
+}
+.ntg-nav-block ul.link-with-description h3:hover {
+  color: #c84c01;
+}
+
+iframe {
+  border-radius: 16px;
+}
+
+.ntg-accordion__heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 40px 0 16px;
+}
+.ntg-accordion__heading h2 {
+  margin: 0;
+}
+.ntg-accordion__controls {
+  margin-left: auto;
+}
+.ntg-accordion__controls a {
+  color: #212529;
+  text-decoration: none;
+  padding: 0.75rem 1rem;
+  border: 1px solid #00235d;
+  border-radius: 6px;
+  transition: 0.15s background-color ease-in-out, 0.15s color ease-in-out;
+}
+.ntg-accordion__controls a:hover {
+  padding-bottom: 0.75rem;
+  border: 1px solid #00235d;
+}
+.ntg-accordion__controls a:first-child {
+  margin-right: 0.5rem;
+  background-color: #00235d;
+  color: #fff;
+}
+.ntg-accordion__controls a:first-child:hover {
+  background-color: rgb(25.5, 57, 109.2);
+  color: #fff;
+}
+.ntg-accordion__controls a:last-child:hover {
+  background-color: #00235d;
+  color: #fff;
+}
+.ntg-accordion .accordion-item {
+  border-left: none;
+  border-right: none;
+}
+.ntg-accordion .accordion-item:first-child {
+  border-top: none;
+}
+.ntg-accordion .accordion-header {
+  margin-top: 0;
+}
+.ntg-accordion .accordion-header:target {
+  display: inherit;
+}
+.ntg-accordion .accordion-button {
+  font-weight: 700;
+}
+.ntg-accordion .accordion-button:not(.collapsed) {
+  box-shadow: none;
+}
+.ntg-accordion .accordion-button:hover {
+  color: #00235d;
+}
+.ntg-accordion .accordion-body > *:last-child {
+  margin-bottom: 0;
+}
+
+/*
+-----------------------------
+Mini cards
+-----------------------------
+*/
+/* Mini cards */
+.ntg-minicard {
+  width: 18rem;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  margin-left: 10px;
+  text-align: center;
+  /* Mini cards icon */
+  /* Mini cards body */
+}
+.ntg-minicard_icon {
+  color: #c33826;
+  padding-bottom: 15px;
+}
+.ntg-minicard_body a {
+  color: #1f1f5f;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+}
+.ntg-minicard_body a:hover {
+  text-decoration: underline;
+  color: #c33826;
+}
+
+/*@function tint($color, $percent){
+  @return mix(white, $color, $percent);
+}*/
+.btn.ntg-btn {
+  display: inline-block;
+  appearance: none;
+  background: #00235d;
+  color: #ffffff;
+  min-width: 6.125rem;
+  padding: 0.75rem 1rem;
+  border: 2px solid transparent;
+  border-radius: 0.625rem;
+  cursor: pointer;
+  vertical-align: middle;
+  transition: background 200ms ease, color 200ms ease, border-color 200ms ease;
+  font-weight: 700;
+  -moz-background-clip: padding; /* Firefox 3.6 */
+  -webkit-background-clip: padding; /* Safari 4? Chrome 6? */
+  background-clip: padding-box; /* Firefox 4, Safari 5, Opera 10, IE 9 */
+}
+.btn.ntg-btn--primary {
+  border-color: #00235d;
+}
+.btn.ntg-btn--primary:hover {
+  background-color: #fa3e00;
+  color: #ffffff;
+  border-color: #fa3e00;
+  -moz-background-clip: padding; /* Firefox 3.6 */
+  -webkit-background-clip: padding; /* Safari 4? Chrome 6? */
+  background-clip: padding-box; /* Firefox 4, Safari 5, Opera 10, IE 9 */
+}
+.btn.ntg-btn--primary:focus {
+  outline: 1.5px solid rgba(227, 82, 5, 0.5);
+  color: #ffffff;
+}
+.btn.ntg-btn--primary:active {
+  background: #00235d;
+  -moz-background-clip: padding; /* Firefox 3.6 */
+  -webkit-background-clip: padding; /* Safari 4? Chrome 6? */
+  background-clip: padding-box; /* Firefox 4, Safari 5, Opera 10, IE 9 */
+}
+.btn.ntg-btn--primary:disabled {
+  cursor: default;
+  background: #e9e8ef;
+  color: #d6d4d1;
+  -moz-background-clip: padding; /* Firefox 3.6 */
+  -webkit-background-clip: padding; /* Safari 4? Chrome 6? */
+  background-clip: padding-box; /* Firefox 4, Safari 5, Opera 10, IE 9 */
+}
+.btn.ntg-btn--primary--center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: block;
+  width: 50%;
+}
+.btn.ntg-btn--secondary {
+  background: #ffffff;
+  color: #000000;
+  padding: 0.75rem 1rem;
+  border-color: #ffffff;
+  -moz-background-clip: padding; /* Firefox 3.6 */
+  -webkit-background-clip: padding; /* Safari 4? Chrome 6? */
+  background-clip: padding-box; /* Firefox 4, Safari 5, Opera 10, IE 9 */
+}
+.btn.ntg-btn--secondary:hover {
+  background-color: #127cbf;
+  color: #ffffff;
+  border-color: #127cbf;
+}
+.btn.ntg-btn--secondary:focus {
+  outline: 2px solid rgba(227, 82, 5, 0.5);
+}
+.btn.ntg-btn--secondary:active {
+  color: #00235d;
+}
+.btn.ntg-btn--tertiary {
+  background: #fa3e00;
+  color: #ffffff;
+  height: auto;
+  border-color: #fa3e00;
+  min-width: auto;
+  position: relative;
+}
+.btn.ntg-btn--tertiary:hover {
+  background: #2b292d;
+  color: #ffffff;
+  border-color: #2b292d;
+}
+.btn.ntg-btn--tertiary:hover::before {
+  right: -16px;
+  transition: right 300ms ease;
+}
+.btn.ntg-btn--tertiary:focus {
+  box-shadow: none;
+}
+.btn.ntg-btn--tertiary:active {
+  color: #00235d;
+  outline: 0;
+}
+.btn.ntg-btn--tertiary:disabled {
+  color: #e9e8ef;
+}
+.btn.ntg-btn--tertiary:disabled::after {
+  color: #e9e8ef;
+  right: -8px;
+}
+.btn.ntg-btn.external:after {
+  content: "\f08e";
+  font-family: "Font Awesome 6 Pro";
+  padding-left: 0.5rem;
+  font-size: 0.875rem;
+}
+.btn-close {
+  opacity: 1;
+}
+
+/*# sourceMappingURL=squizUI.css.map */

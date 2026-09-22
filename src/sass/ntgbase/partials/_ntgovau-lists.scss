@@ -1,0 +1,141 @@
+/*
+-----------------------------
+  Lists
+-----------------------------  
+*/
+main ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+main ul li:before {
+  content: "\f111";
+  font-family: "Font Awesome 6 Pro";
+  display: inline-block;
+  position: relative;
+  max-width: 0;
+  max-height: 0;
+  left: -20px;
+  top: -3px;
+  color: $ntg-ochre;
+  font-size: 7px;
+  font-weight: 900;
+}
+main ul ul {
+  margin-top: 10px;
+}
+main ul ul li::before {
+  content: "\f111";
+  font-family: "Font Awesome 6 Pro";
+  font-size: 7px;
+  font-weight: 400;
+}
+main ul ul ul > li::before {
+  content: "\f04d";
+  font-family: "Font Awesome 6 Pro";
+  font-size: 7px;
+  font-weight: 900;
+}
+main ul ul ul ul > li::before {
+  content: "\f04d";
+  font-family: "Font Awesome 6 Pro";
+  font-size: 7px;
+  font-weight: 400;
+}
+/*main ul ul li::before {
+  content: "\f10c";
+  font-family: 'Font Awesome 6 Pro';
+  font-size: 8px;
+}
+main ul ul ul > li::before {
+  content: "\f04d";
+  font-family: 'Font Awesome 6 Pro';
+  font-size: 8px;
+}*/
+
+main ol li {
+  list-style: unset !important;
+}
+
+main ol li:before {
+  content: "" !important;
+}
+
+/*
+-----------------------------
+List
+-----------------------------
+*/
+.list {
+  list-style-type: none;
+}
+
+.list .heading2 {
+  font-size: 24px;
+}
+
+.list .item {
+  margin-top: 35px;
+  padding-left: 0;
+}
+
+.list .item:before {
+  display: none;
+}
+
+.list .item.last {
+  margin-bottom: 35px;
+}
+
+/* Form styled */
+.form-styled input[type="checkbox"] {
+  display: none;
+}
+
+.form-styled input[type="checkbox"] + label {
+  color: $ntg-arafura-blue-variant;
+  text-decoration: underline;
+  position: relative;
+  display: inline-block;
+  padding-left: 35px;
+  line-height: 1.2;
+}
+
+.form-styled input[type="checkbox"] + label:hover {
+  text-decoration: none;
+}
+
+.form-styled input[type="checkbox"] + label.checked:before {
+  color: $ntg-arafura-blue;
+  /*color: $ntg-arafura-blue-variant;*/
+}
+
+.form-styled input[type="checkbox"] + label:before {
+  content: "\e600";
+  font-family: "icons";
+  color: $ntg-color-white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 13px;
+  height: 21px;
+  display: inline-block;
+  background-color: $ntg-color-white;
+  border: 1px solid $ntg-grey-300;
+  margin-right: 10px;
+  margin-left: -35px;
+  padding: 2px 5px 0 5px;
+  text-decoration: none;
+}
+
+input[type="radio"].sq-form-field {
+  border: 0 none;
+}
+
+.livestock_kept > p {
+  display: inline-block;
+  margin: 10px 15px;
+}
+
+#extra_dates_marrara > div {
+  display: none;
+  margin-bottom: 20px;
+}

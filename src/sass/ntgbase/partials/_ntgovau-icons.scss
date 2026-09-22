@@ -1,0 +1,155 @@
+
+/*
+-----------------------------
+  Link icons
+-----------------------------  
+*/
+a.external::after {
+  content: "\f08e";
+  font-family: 'Font Awesome 6 Pro';
+  padding-left: 5px;
+  font-size: 0.75rem;
+}
+
+a.external[href=""]::after {
+  content: none;
+  padding-left: 0;
+}
+
+em a.external::after {
+  font-style: normal;
+}
+
+.homepage a.external::after, footer a.external::after {
+  display: none;
+}
+
+/*
+-----------------------------
+  File icons
+-----------------------------
+*/
+.icon_docx::before, .icon_doc::before, .icon_dotx::before, .icon_dot::before, .icon_pdf::before, .icon_xlsx::before, .icon_xls::before, .icon_xlts::before, .icon_xlt::before, .icon_xlsm::before, .icon_mp3::before, .icon_wav::before, .icon_jpg::before, .icon_jpeg::before, .icon_gif::before, .icon_png::before, .icon_ppt::before, .icon_pptx::before, .icon_potx::before, .icon_pot::before, .icon_zip::before, .icon_rar::before, .icon_7z::before, .icon_csv::before {
+  font-family: 'Font Awesome 6 Pro';
+  padding-left: 1px;
+  padding-right: 4px;
+  border-bottom-color: $ntg-color-white;
+  bottom: 1px;
+  position: relative;
+}
+
+.icon_docx::before, .icon_doc::before, .icon_dotx::before, .icon_dot::before {
+  content: "\f1c2";
+}
+
+.icon_pdf::before {
+  // content: "\f1c1";
+  /*color: red;*/
+  content: "";
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3C!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--%3E%3Cpath d='M369.9 97.9L286 14C277 5 264.8-.1 252.1-.1H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V131.9c0-12.7-5.1-25-14.1-34zM332.1 128H256V51.9l76.1 76.1zM48 464V48h160v104c0 13.3 10.7 24 24 24h104v288H48zm250.2-143.7c-12.2-12-47-8.7-64.4-6.5-17.2-10.5-28.7-25-36.8-46.3 3.9-16.1 10.1-40.6 5.4-56-4.2-26.2-37.8-23.6-42.6-5.9-4.4 16.1-.4 38.5 7 67.1-10 23.9-24.9 56-35.4 74.4-20 10.3-47 26.2-51 46.2-3.3 15.8 26 55.2 76.1-31.2 22.4-7.4 46.8-16.5 68.4-20.1 18.9 10.2 41 17 55.8 17 25.5 0 28-28.2 17.5-38.7zm-198.1 77.8c5.1-13.7 24.5-29.5 30.4-35-19 30.3-30.4 35.7-30.4 35zm81.6-190.6c7.4 0 6.7 32.1 1.8 40.8-4.4-13.9-4.3-40.8-1.8-40.8zm-24.4 136.6c9.7-16.9 18-37 24.7-54.7 8.3 15.1 18.9 27.2 30.1 35.5-20.8 4.3-38.9 13.1-54.8 19.2zm131.6-5s-5 6-37.3-7.8c35.1-2.6 40.9 5.4 37.3 7.8z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  margin-bottom: -2px;
+}
+
+.icon_xlsx::before, .icon_xls::before, .icon_xlts::before, .icon_xlt::before, .icon_xlsm::before {
+  content: "\f1c3";
+  /*color: #207346;*/
+}
+
+.icon_mp3::before, .icon_wav::before {
+  content: "\f1c7";
+  /*color: #f68929;*/
+}
+
+.icon_jpg::before, .icon_jpeg::before, .icon_gif::before, .icon_png::before {
+  content: "\f1c5";
+  /*color: #70be42;*/
+}
+
+.icon_ppt::before, .icon_pptx::before, .icon_potx::before, .icon_pot::before {
+  content: "\f1c4";
+  /*color: #d14524;*/
+}
+
+.icon_zip::before, .icon_rar::before, .icon_7z::before {
+  content: "\f1c6";
+  /*color: #ff5d0d;*/
+}
+
+.icon_csv::before { 
+    content: "\f6dd"; 
+}
+
+/*
+-----------------------------
+  Highlighting
+-----------------------------  
+*/
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+-----------------------------
+    Social icon colors
+-----------------------------    
+*/
+i[class*="fa-linked"] {
+  color: #007bb5;
+}
+
+i[class*="fa-youtube"] {
+  color: #ff0000;
+}
+
+i[class*="fa-twitter"] {
+  color: #1da1f2;
+}
+
+i[class*="fa-facebook"] {
+  color: #3b5998;
+}
+
+i[class*="fa-instagram"] {
+  color: #c32aa3;
+}
+
+i[class*="fa-vimeo"] {
+  color: #1ab7ea;
+}
+
+i[class*="fa-apple"], i[class*="fa-cc-apple"] {
+  color: #a6b1b7;
+}
+
+i[class*="fa-android"] {
+  color: #a4c639;
+}
+
+.footer-links i[class*="fa-comment"] {
+  color: #007e91;
+}
+
+
+/*
+-----------------------------
+  reposonsive embeds by default
+-----------------------------  
+*/
+iframe, embed, video, object {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}

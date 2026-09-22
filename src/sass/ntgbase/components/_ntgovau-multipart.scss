@@ -1,0 +1,24 @@
+/*
+-----------------------------
+Multipart 2-column menu
+-----------------------------
+*/
+@media (min-width: 768px) {
+    .multipart-menu-2col {
+        -moz-column-count: 2; /* Firefox */
+        -moz-column-gap: 20px;
+        -webkit-column-count: 2; /* Chrome, Safari, Opera */
+        -webkit-column-gap: 20px;
+        column-count: 2;
+        column-gap: 20px;
+    }
+    ul.multipart-menu-2col li {
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .multipart-menu-2col {
+        column-count: 1;
+    }
+}

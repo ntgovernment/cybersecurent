@@ -1,0 +1,65 @@
+/*
+-----------------------------
+Nav block
+-----------------------------
+*/
+
+.ntg-nav-block {
+  &__intro {
+    i.medium {
+      font-size: pxToRem(24px);
+    }
+    h2,
+    i {
+      color: $ntg-arafura-blue;
+
+      &.default-text {
+        color: $ntg-color-dark;
+      }
+    }
+  }
+
+  &__list {
+    ul {
+      padding-left: pxToRem(22px);
+      margin-bottom: 0;
+      li.list-unstyled {
+        &::before {
+          content: "";
+        }
+        a.ntg-btn {
+          @include media-breakpoint-down(sm) {
+            margin-left: pxToRem(-25px);
+            margin-top: pxToRem(25px);
+          }
+        }
+      }
+    }
+    h3 {
+      color: $ntg-arafura-blue;
+    }
+  }
+
+  .border-left-light {
+    @include media-breakpoint-up(md) {
+      border-left: 1px solid $ntg-light;
+      padding-left: pxToRem(32px);
+    }
+  }
+
+  ul.link-with-description {
+    padding-left: 0;
+    margin-top: pxToRem(-22px);
+    li {
+      &::before {
+        content: "";
+      }
+    }
+    h3 {
+      color: $ntg-arafura-blue;
+      &:hover {
+        color: $ntg-ochre-mid;
+      }
+    }
+  }
+}

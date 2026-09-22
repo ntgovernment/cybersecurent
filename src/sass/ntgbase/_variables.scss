@@ -1,0 +1,203 @@
+/*
+-----------------------------
+  NTG Design System - Font & colour pack
+-----------------------------  
+*/
+
+// Media breakpoints
+$media-xs: 375px;
+$media-sm: 576px;
+$media-md: 768px;
+$media-lg: 992px;
+$media-xl: 1200px;
+$media-xxl: 1400px;
+
+// stylelint-disable value-keyword-case
+$font-family-sans-serif: "Lato", sans-serif;
+$font-icons: "Font Awesome 6 Pro";
+
+// $font-size-root affects the value of `rem`, which is used for as well font sizes, paddings, and margins
+// $font-size-base affects the font size of the body text
+$font-size-root: null;
+$font-size-base: 1rem; // Assumes the browser default, typically `16px`
+$font-size-sm: $font-size-base * 0.875;
+$font-size-lg: $font-size-base * 1.25;
+
+// Font weight
+$font-weight-lighter: lighter;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+$font-weight-bolder: bolder;
+
+$font-weight-base: $font-weight-normal;
+
+$line-height-base: 1.5;
+$line-height-sm: 1.25;
+$line-height-lg: 2;
+
+$h1-font-size: $font-size-base * 2.25; //40px
+$h2-font-size: $font-size-base * 2; //32px
+$h3-font-size: $font-size-base * 1.5; //24px
+$h4-font-size: $font-size-base * 1.25; //20px
+$h5-font-size: $font-size-base; //not required
+$h6-font-size: $font-size-base; //not required
+
+// NTG font weight
+$ntg-font-65-medium: 600;
+$ntg-font-55-normal: 500;
+
+// NTG global spacing
+$ntg-spacing-8: pxToRem(8px);
+$ntg-spacing-16: pxToRem(16px);
+$ntg-spacing-24: pxToRem(24px);
+$ntg-spacing-32: pxToRem(32px);
+$ntg-spacing-48: pxToRem(48px);
+$ntg-spacing-72: pxToRem(72px);
+$ntg-spacing-144: pxToRem(144px);
+
+// NTG maxwidth for line lengths
+$ntg-maxwidth: 48rem; //Keeps things readable on wide viewports
+
+// NTG colours
+$ntg-ochre: #c33826;
+$ntg-charcoal-grey: #454347;
+$ntg-arafura-blue: #1f1f5f;
+$ntg-sky-blue: #127cbf;
+$ntg-teal-blue: #007e91;
+$ntg-bottle-green: #1e5e5e;
+$ntg-hot-coral: #c25062;
+$ntg-rubine-red: #980044;
+$ntg-deep-mauve: #845278;
+$ntg-light: #e9e8ef;
+$ntg-lightgrey: #f6f6f6;
+
+// Cyber Secure colours
+$ntg-light-alt: #ecf0f3;
+
+// Variations
+$ntg-arafura-blue-variant: #005ea5;
+$ntg-sky-blue-variant: #7faed2;
+$ntg-ochre-mid: #c84c01;
+$ntg-tealish-blue: #00235d;
+$ntg-cyan: #2e979c;
+$ntg-prussian-blue: #003352;
+
+// Other HEX colours
+$ntg-color-white: #ffffff;
+$ntg-color-black: #000000;
+$ntg-color-dark: #180d0a;
+$ntg-color-hexE35205-50opacity: rgba(227, 82, 5, 0.5);
+$grey-dark-100: #595959;
+$grey-dark-400: #494949;
+$grey-600: $gray-600;
+$light-400: #d6d4d1;
+$light-200: #efece6;
+$grey-400: #f8f7f5;
+$ntg-brown: $ntg-color-hexE35205-50opacity;
+$ntg-orange-bright: #fa3e00;
+$ntg-orange-light: #f1a882;
+
+// NTG colour palettes - override Bootstrap 5 default colours
+$primary: $ntg-tealish-blue;
+$primary-mid: scale-color($primary, $lightness: 15%);
+$primary-variant: $ntg-arafura-blue-variant;
+$secondary: $ntg-sky-blue;
+$secondary-mid: $ntg-ochre-mid;
+$light: $ntg-light;
+$grey-dark: $ntg-charcoal-grey;
+$light-blue: lighten($ntg-sky-blue, 10%);
+
+// NTG alert colours
+$ntg-alert-info: #00bfe9;
+$ntg-alert-success: #0cac78;
+$ntg-alert-error: #ff635c;
+$ntg-alert-warning: #f69900;
+$ntg-alert-other: $grey-600;
+$ntg-banner-alert-danger: #ca3004;
+$ntg-banner-alert-warning: #fa3e00;
+$ntg-banner-alert-info: #127cbf;
+
+// NTG news colours
+$ntg-color-blue: #527aa1;
+$ntg-color-purple: #8c4799;
+$ntg-color-green: #77794b;
+$ntg-color-orange: #bd472a;
+
+//NTG search colours
+$ntg-search-primary: $ntg-sky-blue;
+$ntg-search-secondary: $ntg-ochre-mid;
+$ntg-search-secondary-alt: $ntg-rubine-red;
+$ntg-search-dark: #383434;
+$ntg-search-mid: #5c5656;
+$ntg-search-light: #9b9b9b;
+
+// Lead font weight
+$lead-font-weight: normal;
+
+// NTG greys
+$ntg-grey-600: $grey-dark-400;
+$ntg-grey-500: $grey-dark-100;
+$ntg-grey-400: $light-400;
+$ntg-grey-300: $ntg-light;
+$ntg-grey-200: $grey-400;
+
+// Other greys
+$ntg-grey-light: #efefef;
+$ntg-grey-medium: #ccc;
+$ntg-grey-medium-alt: #dddddd;
+$ntg-grey-strong: #999;
+$ntg-grey-strong-alt: #747474;
+$ntg-grey-dark: #2b292d;
+
+// NTG header colors
+$ntg-color-header-background: $ntg-tealish-blue;
+$ntg-color-header-background-neutral: #e9e8ef;
+$ntg-background-alt: #f6f6f6;
+$ntg-background-light: #ffffff;
+
+// NTG footer colours
+$ntg-footer-links: #b9b9b9;
+$ntg-footer-copyright: #efece6;
+$ntg-footer-text: #64635c;
+$ntg-color-footer-background-dark: $ntg-tealish-blue;
+$ntg-footer-background-light: #e9eff9;
+
+// Breadcrumbs
+$breadcrumb-font-size: $font-size-sm;
+
+// Navigation menu
+$navbar-nav-link-padding-x: 2rem;
+$navbar-dark-color: rgba($ntg-color-white, 1);
+$navbar-dark-hover-color: rgba($ntg-color-white, 1);
+$navbar-dark-active-color: rgba($ntg-color-white, 1);
+$navbar-dark-disabled-color: rgba($ntg-color-white, 0.25);
+$navbar-dark-toggler-border-color: rgba($ntg-color-white, 1);
+$navbar-dark-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-dark-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+$navbar-dark-toggler-border-color: rgba($ntg-color-white, 1);
+
+// NTG accordion
+// $ntg-accordion-button-color: $ntg-color-black;
+// $ntg-accordion-icon-color: $ntg-color-black;
+// $ntg-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23{$ntg-accordion-icon-color}'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+
+// Accordions
+$accordion-bg: transparent;
+$accordion-padding-x: 0;
+$acocrdion-border-width: 0;
+$accordion-border-radius: 0;
+$accordion-inner-border-radius: 0;
+$accordion-body-padding-x: $accordion-padding-x;
+$accordion-button-padding-x: $accordion-padding-x;
+$accordion-button-active-bg: transparent;
+$accordion-button-active-color: $primary;
+$accordion-button-focus-border-color: transparent;
+$accordion-button-focus-box-shadow: none;
+$accordion-icon-width: 1rem;
+$accordion-icon-color: $primary;
+$accordion-icon-active-color: $accordion-icon-color;
+// $accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512' fill='#{$accordion-icon-color}'><path d='M207 381.5L12.7 187.1c-9.4-9.4-9.4-24.6 0-33.9l22.7-22.7c9.4-9.4 24.5-9.4 33.9 0L224 284.5l154.7-154c9.4-9.3 24.5-9.3 33.9 0l22.7 22.7c9.4 9.4 9.4 24.6 0 33.9L241 381.5c-9.4 9.4-24.6 9.4-33.9 0z'/></svg>");
+$accordion-button-active-icon: $accordion-button-icon;
+
+// NTG display cards
+$ntg-display-card-border-radius: 16px;

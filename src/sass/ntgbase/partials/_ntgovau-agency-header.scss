@@ -1,0 +1,61 @@
+/*
+Agency banner
+-----------------------------
+*/
+
+.ntg-header--agencies {
+  .site-logo-lockup {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    .site-logo {
+      width: 10.5rem;
+      height: 3.75rem;
+      margin-right: 0.0625rem;
+      padding-right: 1rem;
+    }
+
+    .site-name {
+      font-size: 1.2rem;
+      line-height: 1.4rem;
+      color: $ntg-color-white;
+      padding: 0 1rem;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .ntg-header--agencies {
+    padding: 0;
+    .site-logo-lockup {
+      display: block !important;
+      .site-logo {
+        display: block !important;
+      }
+      .site-name {
+        display: block !important;
+        padding: 1rem 0 0 !important;
+        margin: 0;
+        border-right: none;
+      }
+    }
+  }
+}
+
+@media (max-width: $media-sm) {
+  .ntg-header--agencies {
+    .site-logo {
+      border-right: none !important;
+    }
+  }
+}
+
+@media print {
+  .ntg-header--agencies {
+    .site-name {
+      color: black !important;
+    }
+  }
+}

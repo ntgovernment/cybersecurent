@@ -1,0 +1,36 @@
+/*
+-----------------------------
+  Topic layout
+-----------------------------
+*/
+.topic-popular {
+  border-bottom: 1px solid $ntg-sky-blue-variant;
+}
+.topic-popular h2 {
+  font-weight: normal;
+  font-size: 39px;
+  margin-top: 0;
+}
+.topic-popular .topic-popular-links h3 {
+  margin-top: 0;
+  padding-bottom: 10px;
+  border-bottom: 3px dotted $light-400;
+  color: $primary;
+  /*border-bottom: 3px dotted $ntg-sky-blue-variant;
+  color: #1c4774;*/
+  font-weight: bold;
+  font-size: 22px;
+  padding-bottom: 10px;
+  font-weight: normal;
+}
+.topic-popular .topic-popular-links h3:hover {
+  border-bottom: 3px dotted $ntg-ochre-mid;
+  color: $ntg-ochre-mid;
+}
+.topic-popular .topic-popular-links a.external::after {
+  content: none;
+}
+.topic-popular a {
+  color: $primary;
+  /*color: #1c4774;*/
+}

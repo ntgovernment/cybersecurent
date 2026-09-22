@@ -1,0 +1,28 @@
+blockquote,
+.quote {
+    @include font-size($h3-font-size);
+    font-weight: 700;
+    display: inline-block;
+    padding-left: calc(24px + 0.5rem);
+    padding-right: calc(24px + 0.5rem);
+    position: relative;
+
+    &::before,
+    &::after {
+        @extend .fa;
+        color: #00235d;
+        position: absolute;
+    }
+
+    &::before {
+        content: "\f10d";
+        top: 0;
+        left: 0;
+    }
+
+    &::after {
+        content: "\f10e";
+        bottom: 0;
+        right: 0;
+    }
+}

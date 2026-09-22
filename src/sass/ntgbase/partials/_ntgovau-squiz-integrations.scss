@@ -1,0 +1,51 @@
+
+/*
+-----------------------------
+    Existing styles carried over
+-----------------------------    
+*/
+.ui-datepicker-current {
+  display: none;
+}
+
+.sq-form-question-tickbox-list ul,
+.sq-form-question-option-list ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sq-form .sq-form-question-datetime input[type="password"],
+.sq-form .sq-form-question-datetime input[type="text"],
+.sq-form .sq-form-question-datetime label,
+.sq-form .sq-form-question-datetime select {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+}
+
+.sq-form input[type="text"],
+.sq-form input[type="password"],
+.sq-form textarea {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.sq-form-question {
+  *zoom: 1;
+}
+
+.clearfix:before,
+.sq-form-question:before,
+.clearfix:after,
+.sq-form-question:after {
+  content: '';
+  display: table;
+  line-height: 0;
+}
+
+.clearfix:after,
+.sq-form-question:after {
+  clear: both;
+}

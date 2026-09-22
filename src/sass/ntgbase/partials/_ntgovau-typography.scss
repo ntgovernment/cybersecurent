@@ -1,0 +1,123 @@
+/*
+-----------------------------
+    Typography
+-----------------------------
+*/
+body {
+  font-family: "Lato", sans-serif;
+  color: $ntg-color-dark;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $primary;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 34px;
+  font-weight: 700;
+  padding-bottom: 15px;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 600;
+  margin: 25px 0 25px;
+}
+
+h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 25px 0 25px;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 25px 0 17px;
+}
+
+h5 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 25px 0 17px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+/*
+    Main link styles
+*/
+a {
+  /*color: $ntg-arafura-blue-variant;*/
+  color: $ntg-arafura-blue;
+  padding-bottom: 1px;
+  // border-bottom: 1.3px solid currentColor;
+}
+a:hover {
+  text-decoration: none;
+  border-width: 0;
+  box-sizing: border-box;
+  color: $ntg-ochre;
+}
+
+main a:hover,
+footer a:hover {
+  padding-bottom: 3px;
+  /* Stops hover flicker */
+}
+
+.border-0 a {
+  border: 0 !important;
+}
+
+.homepage a:hover.btn,
+.page a.btn:hover {
+  padding-bottom: 8px;
+}
+
+header a,
+.topics a,
+.gov-buttons a,
+a.news-image,
+.most-popular a,
+.news-list a.thumb-link,
+.topic-popular a,
+a.related-toggle,
+.footer-logo a,
+.footer-social a,
+.close-page-useful,
+.rsbtn a {
+  text-decoration: none;
+  border-width: 0;
+}
+
+.accToggle.external::after {
+  content: none;
+}
+
+.homepage .featured-link {
+  border-bottom: 1px solid $ntg-light;
+}
+.homepage .featured-link h3 {
+  color: $ntg-sky-blue;
+}
+
+.homepage .homepage-alert-wrapper {
+  background-color: $ntg-background-light;
+  padding: 18px;
+}
+
+.featured-link.mobile {
+  background-color: $ntg-sky-blue;
+  margin: 0 -8px 0 -8px;
+  padding-left: 8px !important;
+  border: none;
+}

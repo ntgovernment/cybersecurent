@@ -1,0 +1,118 @@
+
+
+.profile {
+    position: absolute;
+    top: -12px;
+    display: inline-block;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 25px;
+    height: 25px;
+    margin: 0;
+    border: 1px solid $ntg-color-white;
+    border-radius: 50%;
+  }
+  
+  .profile-avatar {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+  }
+  
+  .profile-inline {
+    position: relative;
+    top: 0;
+    display: inline-block;
+  }
+  
+  .profile-inline ~ .card-title {
+    display: inline-block;
+    margin-left: 4px;
+    vertical-align: top;
+  }
+  
+  .text-bold {
+    font-weight: 700;
+  }
+  
+  .meta {
+    font-size: 1em;
+    color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .meta a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .meta a:hover {
+    color: rgba(0, 0, 0, 0.87);
+  }
+  
+  .east-arnhem {
+    color: #f5835a;
+  }
+  
+  .katherine {
+    color: #75aede;
+  }
+  
+  /* Up down arrows for treasury stats tables */
+  .arrowup:before {
+    content: "\f062";
+    font-family: Font Awesome 6 Pro;
+  }
+  
+  .arrowdown:before {
+    content: "\f063";
+    font-family: Font Awesome 6 Pro;
+  }
+  
+  /*Weeds page icons*/
+  .bio {
+    background: url("https://nt.gov.au/__data/assets/image/0007/495412/bio.png");
+  }
+  
+  .chemical {
+    background: url("https://nt.gov.au/__data/assets/image/0008/495413/chemical.png");
+  }
+  
+  .fire {
+    background: url("https://nt.gov.au/__data/assets/image/0009/495414/fire.png");
+  }
+  
+  .hand {
+    background: url("https://nt.gov.au/__data/assets/image/0010/495415/hand.png");
+  }
+  
+  .livestock {
+    background: url("https://nt.gov.au/__data/assets/image/0011/495416/livestock.png");
+  }
+  
+  .machine {
+    background: url("https://nt.gov.au/__data/assets/image/0003/495417/machine.png");
+  }
+  
+  .plant {
+    background: url("https://nt.gov.au/__data/assets/image/0004/495418/plant.png");
+  }
+  
+  .slasher {
+    background: url("https://nt.gov.au/__data/assets/image/0005/495419/slasher.png");
+  }
+  
+  .chemical,
+  .bio,
+  .fire,
+  .hand,
+  .livestock,
+  .machine,
+  .slasher,
+  .plant {
+    line-height: 40px;
+    padding: 0 0 0 46px;
+    background-position: left top;
+    background-repeat: no-repeat;
+  }
+  /*# sourceMappingURL=styles.css.map */

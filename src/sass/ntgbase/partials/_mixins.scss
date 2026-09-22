@@ -1,0 +1,24 @@
+/*@function tint($color, $percent){
+  @return mix(white, $color, $percent);
+}*/
+
+//Sass mixin - convert Photoshop kerning value to letter spacing in em
+@function calc-letter-spacing($kerningValue) {
+  @return #{$kerningValue / 1000}em;
+}
+
+//Mixin for background clipping default
+@mixin background-clip-default {
+    -moz-background-clip: padding; /* Firefox 3.6 */
+    -webkit-background-clip:padding;/* Safari 4? Chrome 6? */
+    background-clip:padding-box; /* Firefox 4, Safari 5, Opera 10, IE 9 */
+}
+
+// Function for escape special character 
+@function str-replace($string, $search, $replace: '') {
+  $index: str-index($string, $search);
+  @if $index {
+    @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+  }
+  @return $string;
+}

@@ -1,0 +1,456 @@
+//Global spacing - as per NTG Digital Guidelines
+
+.ntg {
+  &-p {
+    &-8 {
+      padding: pxToRem(8px) !important;
+    }
+
+    &-16 {
+      padding: pxToRem(16px) !important;
+    }
+
+    &-24 {
+      padding: pxToRem(24px) !important;
+    }
+
+    &-32 {
+      padding: pxToRem(32px) !important;
+    }
+
+    &-48 {
+      padding: pxToRem(48px) !important;
+    }
+
+    &-72 {
+      padding: pxToRem(72px) !important;
+    }
+
+    &-144 {
+      padding: pxToRem(144px) !important;
+    }
+  }
+
+  &-pt {
+    &-8 {
+      padding-top: pxToRem(8px) !important;
+    }
+
+    &-16 {
+      padding-top: pxToRem(16px) !important;
+    }
+
+    &-24 {
+      padding-top: pxToRem(24px) !important;
+    }
+
+    &-32 {
+      padding-top: pxToRem(32px) !important;
+    }
+
+    &-48 {
+      padding-top: pxToRem(48px) !important;
+    }
+
+    &-72 {
+      padding-top: pxToRem(72px) !important;
+    }
+
+    &-144 {
+      padding-top: pxToRem(144px) !important;
+    }
+  }
+
+  &-pb {
+    &-8 {
+      padding-bottom: pxToRem(8px) !important;
+    }
+
+    &-16 {
+      padding-bottom: pxToRem(16px) !important;
+    }
+
+    &-24 {
+      padding-bottom: pxToRem(24px) !important;
+    }
+
+    &-32 {
+      padding-bottom: pxToRem(32px) !important;
+    }
+
+    &-48 {
+      padding-bottom: pxToRem(48px) !important;
+    }
+
+    &-72 {
+      padding-bottom: pxToRem(72px) !important;
+    }
+
+    &-144 {
+      padding-bottom: pxToRem(144px) !important;
+    }
+  }
+
+  &-ps {
+    &-8 {
+      padding-left: pxToRem(8px) !important;
+    }
+
+    &-16 {
+      padding-left: pxToRem(16px) !important;
+    }
+
+    &-24 {
+      padding-left: pxToRem(24px) !important;
+    }
+
+    &-32 {
+      padding-left: pxToRem(32px) !important;
+    }
+
+    &-48 {
+      padding-left: pxToRem(48px) !important;
+    }
+
+    &-72 {
+      padding-left: pxToRem(72px) !important;
+    }
+
+    &-144 {
+      padding-left: pxToRem(144px) !important;
+    }
+  }
+
+  &-pe {
+    &-8 {
+      padding-left: pxToRem(8px) !important;
+    }
+
+    &-16 {
+      padding-right: pxToRem(16px) !important;
+    }
+
+    &-24 {
+      padding-right: pxToRem(24px) !important;
+    }
+
+    &-32 {
+      padding-right: pxToRem(32px) !important;
+    }
+
+    &-48 {
+      padding-right: pxToRem(48px) !important;
+    }
+
+    &-72 {
+      padding-right: pxToRem(72px) !important;
+    }
+
+    &-144 {
+      padding-right: pxToRem(144px) !important;
+    }
+  }
+
+  &-py {
+    &-8 {
+      padding-top: pxToRem(8px) !important;
+      padding-bottom: pxToRem(8px) !important;
+    }
+
+    &-16 {
+      padding-top: pxToRem(16px) !important;
+      padding-bottom: pxToRem(16px) !important;
+    }
+
+    &-24 {
+      padding-top: pxToRem(24px) !important;
+      padding-bottom: pxToRem(24px) !important;
+    }
+
+    &-32 {
+      padding-top: pxToRem(32px) !important;
+      padding-bottom: pxToRem(32px) !important;
+    }
+
+    &-48 {
+      padding-top: pxToRem(48px) !important;
+      padding-bottom: pxToRem(48px) !important;
+    }
+
+    &-72 {
+      padding-top: pxToRem(72px) !important;
+      padding-bottom: pxToRem(72px) !important;
+    }
+
+    &-144 {
+      padding-top: pxToRem(144px) !important;
+      padding-bottom: pxToRem(144px) !important;
+    }
+  }
+
+  &-px {
+    &-8 {
+      padding-left: pxToRem(8px) !important;
+      padding-right: pxToRem(8px) !important;
+    }
+
+    &-16 {
+      padding-left: pxToRem(16px) !important;
+      padding-right: pxToRem(16px) !important;
+    }
+
+    &-24 {
+      padding-left: pxToRem(24px) !important;
+      padding-right: pxToRem(24px) !important;
+    }
+
+    &-32 {
+      padding-left: pxToRem(32px) !important;
+      padding-right: pxToRem(32px) !important;
+    }
+
+    &-48 {
+      padding-left: pxToRem(48px) !important;
+      padding-right: pxToRem(48px) !important;
+    }
+
+    &-72 {
+      padding-left: pxToRem(72px) !important;
+      padding-right: pxToRem(72px) !important;
+    }
+
+    &-144 {
+      padding-left: pxToRem(144px) !important;
+      padding-right: pxToRem(144px) !important;
+    }
+  }
+
+  &-m {
+    &-8 {
+      margin: pxToRem(8px) !important;
+    }
+
+    &-16 {
+      margin: pxToRem(16px) !important;
+    }
+
+    &-24 {
+      margin: pxToRem(24px) !important;
+    }
+
+    &-32 {
+      margin: pxToRem(32px) !important;
+    }
+
+    &-48 {
+      margin: pxToRem(48px) !important;
+    }
+
+    &-72 {
+      margin: pxToRem(72px) !important;
+    }
+
+    &-144 {
+      margin: pxToRem(144px) !important;
+    }
+  }
+
+  &-mt {
+    &-8 {
+      margin-top: pxToRem(8px) !important;
+    }
+
+    &-16 {
+      margin-top: pxToRem(16px) !important;
+    }
+
+    &-24 {
+      margin-top: pxToRem(24px) !important;
+    }
+
+    &-32 {
+      margin-top: pxToRem(32px) !important;
+    }
+
+    &-48 {
+      margin-top: pxToRem(48px) !important;
+    }
+
+    &-72 {
+      margin-top: pxToRem(72px) !important;
+    }
+
+    &-144 {
+      margin-top: pxToRem(144px) !important;
+    }
+  }
+
+  &-mb {
+    &-8 {
+      margin-bottom: pxToRem(8px) !important;
+    }
+
+    &-16 {
+      margin-bottom: pxToRem(16px) !important;
+    }
+
+    &-24 {
+      margin-bottom: pxToRem(24px) !important;
+    }
+
+    &-32 {
+      margin-bottom: pxToRem(32px) !important;
+    }
+
+    &-48 {
+      margin-bottom: pxToRem(48px) !important;
+    }
+
+    &-72 {
+      margin-bottom: pxToRem(72px) !important;
+    }
+
+    &-144 {
+      margin-bottom: pxToRem(144px) !important;
+    }
+  }
+
+  &-ms {
+    &-8 {
+      margin-left: pxToRem(8px) !important;
+    }
+
+    &-16 {
+      margin-left: pxToRem(16px) !important;
+    }
+
+    &-24 {
+      margin-left: pxToRem(24px) !important;
+    }
+
+    &-32 {
+      margin-left: pxToRem(32px) !important;
+    }
+
+    &-48 {
+      margin-left: pxToRem(48px) !important;
+    }
+
+    &-72 {
+      margin-left: pxToRem(72px) !important;
+    }
+
+    &-144 {
+      margin-left: pxToRem(144px) !important;
+    }
+  }
+
+  &-me {
+    &-8 {
+      margin-right: pxToRem(8px) !important;
+    }
+
+    &-16 {
+      margin-right: pxToRem(16px) !important;
+    }
+
+    &-24 {
+      margin-right: pxToRem(24px) !important;
+    }
+
+    &-32 {
+      margin-right: pxToRem(32px) !important;
+    }
+
+    &-48 {
+      margin-right: pxToRem(48px) !important;
+    }
+
+    &-72 {
+      margin-right: pxToRem(72px) !important;
+    }
+
+    &-144 {
+      margin-right: pxToRem(144px) !important;
+    }
+  }
+
+  &-my {
+    &-8 {
+      margin-top: pxToRem(8px) !important;
+      margin-bottom: pxToRem(8px) !important;
+    }
+
+    &-16 {
+      margin-top: pxToRem(16px) !important;
+      margin-bottom: pxToRem(16px) !important;
+    }
+
+    &-24 {
+      margin-top: pxToRem(24px) !important;
+      margin-bottom: pxToRem(24px) !important;
+    }
+
+    &-32 {
+      margin-top: pxToRem(32px) !important;
+      margin-bottom: pxToRem(32px) !important;
+    }
+
+    &-48 {
+      margin-top: pxToRem(48px) !important;
+      margin-bottom: pxToRem(48px) !important;
+    }
+
+    &-72 {
+      margin-top: pxToRem(72px) !important;
+      margin-bottom: pxToRem(72px) !important;
+    }
+
+    &-144 {
+      margin-top: pxToRem(144px) !important;
+      margin-bottom: pxToRem(144px) !important;
+    }
+
+    &-288 {
+      margin-top: pxToRem(288px) !important;
+      margin-bottom: pxToRem(288px) !important;
+    }
+  }
+
+  &-mx {
+    &-8 {
+      margin-left: pxToRem(8px) !important;
+      margin-right: pxToRem(8px) !important;
+    }
+
+    &-16 {
+      margin-left: pxToRem(16px) !important;
+      margin-right: pxToRem(16px) !important;
+    }
+
+    &-24 {
+      margin-left: pxToRem(24px) !important;
+      margin-right: pxToRem(24px) !important;
+    }
+
+    &-32 {
+      margin-left: pxToRem(32px) !important;
+      margin-right: pxToRem(32px) !important;
+    }
+
+    &-48 {
+      margin-left: pxToRem(48px) !important;
+      margin-right: pxToRem(48px) !important;
+    }
+
+    &-72 {
+      margin-left: pxToRem(72px) !important;
+      margin-right: pxToRem(72px) !important;
+    }
+
+    &-144 {
+      margin-left: pxToRem(144px) !important;
+      margin-right: pxToRem(144px) !important;
+    }
+  }
+}

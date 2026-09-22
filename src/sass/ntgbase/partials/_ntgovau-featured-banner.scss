@@ -1,0 +1,27 @@
+.ntg-featured-banner {
+  overflow: hidden;
+  position: relative;
+  ul.popular-topics {
+    li {
+      padding: pxToRem(4px 0);
+
+      a {
+        text-decoration: none;
+        :after {
+          content: ">";
+        }
+      }
+      &:before {
+        content: none;
+        padding: 0.25rem 0;
+      }
+    }
+  }
+  .ntg-watermark {
+    right: -200px;
+    position: absolute;
+    top: 30%;
+    margin-top: -250px;
+    transition: transform 5000ms ease;
+  }
+}
